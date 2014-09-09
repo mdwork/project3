@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px 'PT Sans', sans-serif; background:#fff; color:#212a32; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -15,7 +15,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px 'PT Sans', sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -35,6 +35,7 @@ a:hover                        { text-decoration:none; }
 .align-l                       { text-align:left !important; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
+.clearfix:after                {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -42,10 +43,130 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.header {
+    width: 1080px;
+    margin: 15px auto;
+}
+    .main-logo {
+        float: left;
+    }
+    .main-logo,
+    .main-logo img {
+        overflow: hidden;
+        width: 373px;
+        height: 76px;
+    }
+        .main-logo a,
+        .main-logo img {
+            display: block;
+        }
 
+    .wrap-registration {
+        float: right;
+        margin-top: 30px;
+        color: #909090;
+        font-size: 16px;
+    }
+        .link-entry {
+            display: inline-block;
+            height: 23px;
+            padding-left: 25px;
+            margin-right: 5px;
+            background: url("../images/header/icon-lock.png") no-repeat;
+        }
+        .link-registration {
+            display: inline-block;
+            height: 22px;
+            padding-left: 25px;
+            margin-left: 5px;
+            background: url("../images/header/icon-pencil.png") 0 2px no-repeat;
+        }
+            .wrap-registration a {
+                color: #363b3d;
+                font-size: 16px;
+                border-bottom: 1px dashed #363b3d;
+                text-decoration: none;
+            }
+            .wrap-registration a:hover {
+                border-bottom: none;
+            }
+
+    .add-ads {
+        display: inline-block;
+        margin: 30px 0 0 90px;
+        padding-left: 28px;
+        background: url("../images/header/icon-plus.png") no-repeat;
+        color: #d7270d;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .add-ads:hover {
+        text-decoration: none;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.bg-nav {
+    background: #5E5F60;
+}
+    .nav {
+        width: 1080px;
+        margin: 0 auto;
+        min-height: 58px;
+    }
+        .nav > li {
+            position: relative;
+            float: left;
+            border-right: 1px solid #fff;
+        }
+        .nav > li:hover {
+            background: #3A3B3C;
+        }
+        .nav > li:hover ul {
+            display: block;
+            position: absolute;
+            z-index: 10;
+            top: 58px;
+            left: 0;
+        }
+            .nav > li a {
+                display: block;
+                padding: 18px 20px;
+                color: #fff;
+                background-repeat: no-repeat;
+                background-position: right;
+                font-size: 18px;
+
+            }
+            .nav > li > a {
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .nav > li > a:hover {
+                background: #3A3B3C no-repeat right;
+                padding-bottom: 17px;
+            }
+
+            .sub-menu {
+                display: none;
+                background: #3A3B3C;
+            }
+                .sub-menu li {
+                    width: 250px;
+                    background: #3A3B3C;
+                    border-top: 1px solid #fff;
+                }
+                    .sub-menu li a {
+                        padding: 13px 20px;
+                    }
+                    .sub-menu li:hover a {
+                        background: #D7270E;
+                        text-decoration: underline;
+                    }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
