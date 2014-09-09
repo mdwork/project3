@@ -41,7 +41,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .wrapper {
     width: 1080px;
-    margin: 0 auto;
+    margin: 25px auto 35px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -178,15 +178,136 @@ a:hover                        { text-decoration:none; }
     width: 830px;
     margin-right: 10px;
 }
-    .form-search-features {
+    .wrap-form-search-features {
+        overflow: hidden;
+        position: relative;
         background: #F2F2F2;
     }
         .header-second {
+            padding: 3px 0 3px 13px;
             color: #262a2f;
+            border-left: 3px solid #D7270D;
+            background: #E4E4E4;
             font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
         }
+        .toggle-button-search-form {
+            position: absolute;
+            right: 20px;
+            top: 3px;
+            padding-left: 15px;
+            background: url("../images/content/icon-triagle-active.png") no-repeat left;
+        }
+            .toggle-button-search-form a {
+                color: #363b3d;
+                border-bottom: 1px dashed #363b3d;
+                font-size: 17px;
+                text-decoration: none;
+            }
+            .toggle-button-search-form a:hover {
+                border: none;
+            }
+
+    .form-search-features {
+        padding: 17px;
+    }
+        .select-box-search-form {
+            overflow: hidden;
+        }
+            .select-box-search-form li {
+                float: left;
+                width: 258px;
+                margin-left: 11px;
+            }
+            .select-box-search-form li:first-child {
+                margin-left: 0;
+            }
+                .name-input {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    color: #5e5f60;
+                    font-size: 15px;
+                }
+                .custom-input {
+                    max-width: 258px;
+                    width: 100%;
+                    height: 24px;
+                    margin-bottom: 15px;
+                    color: #b5b5b5;
+                    border: 1px solid #BFBFBF;
+                    font-size: 14px;
+                }
+                .custom-select-height {
+                    height: 24px;
+                }
+                .little-select {
+                    max-width: 123px;
+                }
+        .box-price {
+            overflow: hidden;
+        }
+        .wrap-scale-price {
+            float: left;
+            position: relative;
+            max-width: 392px;
+            width: 100%;
+        }
+            .wrap-scale-price:after {
+                content: '';
+                position: absolute;
+                bottom: 7px;
+                display: block;
+                width: 100%;
+                max-width: 390px;
+                height: 4px;
+                background: #fff;
+                border: 1px solid #BFBFBF;
+            }
+            .active-value {
+                position: relative;
+                z-index: 10;
+                display: block;
+                width: 125px;
+                height: 6px;
+                margin: 20px 0 0 50px;
+                background: #BFBFBF;
+            }
+                .active-value:before,
+                .active-value:after {
+                    content: '';
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-top: -8px;
+                    background: #D7270D;
+                    border:3px solid #fff;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    border-radius: 15px;
+                }
+                .active-value:before {
+                    float: left;
+                    margin-left: -15px;
+                }
+                .active-value:after {
+                    float: right;
+                    margin-right: -15px;
+                }
+        .horizontal-list-select {
+            float: left;
+            margin-left: 12px;
+        }
+            .horizontal-list-select li {
+                float: left;
+                max-width: 123px;
+                width: 100%;
+                margin-left: 11px;
+            }
+            .horizontal-list-select li:first-child {
+                margin-left: 0;
+            }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

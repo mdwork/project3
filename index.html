@@ -20,7 +20,9 @@
             <div class="wrap-registration">
                 <span class="link-entry"><a href="#">Войдите</a></span>
                 <span>или</span>
-                <span class="link-registration"><a href="#" id="popup-registration">зарегистрируйтесь</a></span>
+                <span class="link-registration">
+                    <a href="#" id="popup-registration">зарегистрируйтесь</a>
+                </span>
             </div>
 
             <span class="add-ads">Подать объявление</span>
@@ -87,11 +89,116 @@
 
     <div class="wrapper">
         <main class="content">
-            <section class="form-search-features">
+            <section class="wrap-form-search-features">
                 <h2 class="header-second">Поиск по параметрам</h2>
-                <form action="#" method="post">
+                <span class="toggle-button-search-form"><a href="#">Свернуть поиск</a></span>
 
+                <form action="#" method="post" class="form-search-features">
+                    <ul class="select-box-search-form">
+                        <!--first column-->
+                        <li>
+                            <span class="name-input">Марка</span>
+                            <select class="custom-input custom-select-height">
+                                <option>Audi</option>
+                                <option>Ford</option>
+                            </select>
+
+                            <span class="name-input">Модель</span>
+                            <select class="custom-select">
+                                <option>GL550</option>
+                                <option>GL550</option>
+                            </select>
+
+                            <span class="name-input">Год выпуска</span>
+                            <div class="clearfix">
+                                <select class="custom-input custom-select-height little-select float-l">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                                <select class="custom-input custom-select-height little-select float-r">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                            </div>
+                        </li>
+
+                        <!--second column-->
+                        <li>
+                            <span class="name-input">Кузов</span>
+                            <select class="custom-input custom-select-height">
+                                <option>Внедородник</option>
+                                <option>Внедородник</option>
+                            </select>
+
+                            <span class="name-input">Тип двигателя</span>
+                            <select class="custom-input custom-select-height">
+                                <option>Бензин</option>
+                                <option>Бензин</option>
+                            </select>
+
+                            <span class="name-input">Объем двигателя</span>
+                            <div class="clearfix">
+                                <select class="custom-input custom-select-height little-select float-l">
+                                    <option>4,5л</option>
+                                    <option>7,0л</option>
+                                </select>
+                                <select class="custom-input custom-select-height little-select float-r">
+                                    <option>7,0л</option>
+                                    <option>7,0л</option>
+                                </select>
+                            </div>
+                        </li>
+
+                        <!--third column-->
+                        <li>
+                            <span class="name-input">Период</span>
+                            <select class="custom-input custom-select-height">
+                                <option>1 месяц</option>
+                                <option>1 месяц</option>
+                            </select>
+
+                            <span class="name-input">Город</span>
+                            <select class="custom-input custom-select-height">
+                                <option>Минск</option>
+                                <option>Минск</option>
+                            </select>
+
+                            <span class="name-input">Фото</span>
+                            <select class="custom-input custom-select-height">
+                                <option>Необязательно</option>
+                                <option>Необязательно</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <div class="box-price">
+                        <div class="wrap-scale-price">
+                            <span class="name-input">Цена</span>
+                            <span class="active-value"></span>
+                        </div>
+
+                        <ul class="horizontal-list-select">
+                            <li>
+                                <span class="name-input">От</span>
+                                <input type="text" class="custom-input little-select">
+                            </li>
+
+                            <li>
+                                <span class="name-input">До</span>
+                                <input type="text" class="custom-input little-select">
+                            </li>
+
+                            <li>
+                                <span class="name-input">Валюта</span>
+                                <select class="custom-input custom-select-height little-select">
+                                    <option>1500</option>
+                                    <option>7550</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
                 </form>
+
             </section>
 
 
