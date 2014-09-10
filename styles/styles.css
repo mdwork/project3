@@ -360,6 +360,60 @@ a:hover                        { text-decoration:none; }
         overflow: hidden;
         background: #F7F7F7;
     }
+        .list-filter-auto {
+            overflow: hidden;
+            margin: 20px 20px 30px;
+        }
+            .list-filter-auto li {
+                float: left;
+                margin-left: 15px;
+            }
+            .list-filter-auto li:first-child {
+                margin-left: 0;
+            }
+            .active-category-auto {
+
+            }
+                .list-filter-auto a {
+                    display: block;
+                    color: #d7270d;
+                    border-bottom: 1px dashed #d7270d;
+                    font-size: 17px;
+                    text-decoration: none;
+                }
+                .list-filter-auto a:hover {
+                    border-bottom: none;
+                }
+                .active-category-auto a {
+                    color: #5e5f60;
+                    font-weight: bold;
+                    border: none;
+                }
+
+        .list-auto-brand,
+        .list-auto-type,
+        .list-auto-city {
+            display: none;
+            overflow: hidden;
+            margin: 20px;
+        }
+            .box-category-auto {
+                width: 197px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+                .wrap-foto-auto {
+                    display: table-cell;
+                    width: 80px;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                .box-category-auto a {
+                    display: table-cell;
+                    color: #12181d;
+                    font-size: 15px;
+                    vertical-align: middle;
+                }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -368,3 +422,10 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------JAVA SCRIPT---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.show_js {
+    display: block;
+}
