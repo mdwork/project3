@@ -362,7 +362,7 @@ a:hover                        { text-decoration:none; }
     }
         .list-filter-auto {
             overflow: hidden;
-            margin: 20px 20px 30px;
+            margin: 20px 20px 5px;
         }
             .list-filter-auto li {
                 float: left;
@@ -389,30 +389,111 @@ a:hover                        { text-decoration:none; }
                     font-weight: bold;
                     border: none;
                 }
-
-        .list-auto-brand,
-        .list-auto-type,
-        .list-auto-city {
-            display: none;
+        .wrap-all-category-auto {
             overflow: hidden;
-            margin: 20px;
         }
-            .box-category-auto {
-                width: 197px;
-                display: table-cell;
-                vertical-align: middle;
+            .wrap-all-category-auto li {
+                float: left;
             }
-                .wrap-foto-auto {
-                    display: table-cell;
-                    width: 80px;
-                    text-align: center;
+                .list-auto-brand,
+                .list-auto-type,
+                .list-auto-city {
+                    display: none;
+                    overflow: hidden;
+                    margin: 10px 20px 20px;
+                }
+                    .first-column,
+                    .second-column,
+                    .third-column,
+                    .fourth-column{
+                        width: 197px;
+                    }
+                        .box-category-auto,
+                        .box-category-auto2 {
+                            display: table;
+                            width: 197px;
+                            height: 50px;
+                            vertical-align: middle;
+                        }
+                        .box-category-auto2 {
+                            width: 210px;
+                            margin-right: 50px;
+                        }
+                            .wrap-foto-auto,
+                            .wrap-foto-auto2 {
+                                display: table-cell;
+                                width: 80px;
+                                text-align: center;
+                                vertical-align: middle;
+                            }
+                            .wrap-foto-auto2 {
+                                width: 105px;
+                            }
+                            .wrap-link-auto {
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
+                                a.link-category-auto {
+                                    color: #12181d;
+                                    font-size: 15px;
+                                }
+                        .header-city {
+                            color: #5e5f60;
+                            font-size: 19px;
+                            font-weight: 400;
+                        }
+
+        .empty-box {
+            position: relative;
+            width: 728px;
+            height: 90px;
+            margin: 0 auto 25px;
+            background: #fff;
+            border: 1px solid #BFBFBF;
+        }
+            .size-empty-box {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -13px 0 0 -35px;
+                color: #5E5F60;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        .bt-ad {
+            margin-left: 0;
+            background: #5E5F60;
+        }
+        .bt-ad:hover {
+            background: #000;
+        }
+        .list-advantage {
+            overflow: hidden;
+            color: #1d262e;
+            font-size: 20px;
+        }
+            .list-advantage li {
+                float: left;
+                margin-left: 30px;
+            }
+                .list-advantage li:before {
+                    content: '';
+                    display: inline-block;
+                    width: 37px;
+                    height: 36px;
+                    margin-right: 15px;
+                    background: url("../images/content/sprite_ad.png") no-repeat;
                     vertical-align: middle;
                 }
-                .box-category-auto a {
-                    display: table-cell;
-                    color: #12181d;
-                    font-size: 15px;
-                    vertical-align: middle;
+                .list-advantage .second-advantage:before {
+                    width: 53px;
+                    background-position: -149px 0px;
+                }
+                .list-advantage .third-advantage:before {
+                    width: 32px;
+                    background-position: -336px 0px;
                 }
 
 /*----------------------------------------------------------------------------------*/
@@ -424,8 +505,16 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------JAVA SCRIPT---------------------------------------*/
+/*-------------------------------------OTHER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.show_js {
+.show_js > ul {
     display: block;
+}
+.indent-b-20 {
+    margin-bottom: 20px;
+}
+.indent-for-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
 }

@@ -44,10 +44,21 @@
 
             li.addClass('active-category-auto');
 
+            var brand = $('.list-auto-brand').parent(),
+                type = $('.list-auto-type').parent(),
+                city = $('.list-auto-city').parent();
+
             if(currentLink == 'По марке') {
-                var brand = $('.list-auto-brand'),
-                    brandAttr = brand.attr('class'),
-                    arrayClass = brandAttr.split(' ');
+                $('.wrap-all-category-auto > li').removeAttr('class');
+                brand.addClass('show_js');
+            }
+            if(currentLink == 'По кузову') {
+                $('.wrap-all-category-auto > li').removeAttr('class');
+                type.addClass('show_js');
+            }
+            if(currentLink == 'По городу') {
+                $('.wrap-all-category-auto > li').removeAttr('class');
+                city.addClass('show_js');
             }
 
         }
