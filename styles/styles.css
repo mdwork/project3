@@ -545,7 +545,9 @@ a:hover                        { text-decoration:none; }
                         display: inline-block;
                         height: 20px;
                         width: 11px;
+                        margin-right: 5px;
                         background: url("../images/content/sprite_tel_address.png") no-repeat;
+                        vertical-align: middle;
                     }
                     .box-address a {
                         font-size: 16px;
@@ -579,14 +581,29 @@ a:hover                        { text-decoration:none; }
                             background-position: -46px 0;
                         }
                     .box-review a {
-                        color: #000;
+                        color: #d7270e;
+                        border-bottom: 1px solid #d7270e;
                         font-size: 14px;
+                        text-decoration: none;
                     }
+                        .box-review a:hover {
+                            color: #000;
+                            border-bottom: 1px solid #000;
+                        }
                 .tel-autoservice {
                     display: block;
                     color: #686868;
                     font-size: 14px;
                 }
+                    .tel-autoservice:before {
+                        content: '';
+                        display: inline-block;
+                        height: 20px;
+                        width: 11px;
+                        margin-right: 5px;
+                        background: url("../images/content/sprite_tel_address.png") no-repeat 0 -70px;
+                        vertical-align: middle;
+                    }
 
         .list-autoservice {
             width: 100%;
@@ -637,6 +654,9 @@ a:hover                        { text-decoration:none; }
                             width: 264px;
                             height: 180px;
                             margin-bottom: 15px;
+                        }
+                        .main-article-news header {
+                            margin-top: 10px;
                         }
                         .main-article-news header,
                         .sub-article-news header {
@@ -704,7 +724,7 @@ a:hover                        { text-decoration:none; }
                                     width: 18px;
                                     height: 18px;
                                     margin-right: 5px;
-                                    background: url("../images/content/sprite_article.png") no-repeat 0px -33px;
+                                    background: url("../images/content/sprite_article.png") no-repeat 0 -33px;
                                 }
                                 .info-about-article-review:before {
                                     width: 23px;
@@ -747,7 +767,87 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.side-bar {
+    float: left;
+    width: 240px;
+}
+    .banner-aside {
+        position: relative;
+        border: 1px solid #BFBFBF;
+        width: 238px;
+        height: 398px;
+        margin-bottom: 10px;
+    }
+    .box-subscription {
+        margin: 10px 0;
+        padding: 18px;
+        border: 1px solid #E4E4E4;
+    }
+        .description-subscription {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #262a2f;
+            font-size: 18px;
+        }
+            .form-subscription li {
+                margin-bottom: 7px;
+            }
+                .name-select-subscription {
+                    display: block;
+                    margin-bottom: 3px;
+                    padding-left: 10px;
+                    color: #5e5f60;
+                    font-size: 17px;
+                }
+                .select-subscription,
+                .input-subscription {
+                    width: 100%;
+                    height: 27px;
+                    font-size: 14px;
+                    border: 1px solid #BFBFBF;
+                }
+                .input-subscription {
+                    max-width: 190px;
+                    padding: 0 5px;
+                }
+                .bt-price-subscription {
+                    width: 82px;
+                }
+            .bt-subscription {
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+    .box-banner-link {
+        margin-bottom: 10px;
+        padding: 25px;
+        color: #d7260e;
+        border: 1px solid #E4E4E4;
+        font-size: 17px;
+        text-decoration: underline;
+    }
 
+    .box-special-placement {
+        margin-top: 10px;
+        padding: 10px 8px 20px;
+        border: 1px solid #E4E4E4;
+        text-align: center;
+    }
+        .link-placement {
+            display: inline-block;
+            height: 30px;
+            padding-left: 25px;
+            background: url("../images/content/icon-placement.png") no-repeat;
+        }
+        .link-placement a {
+            color: #5E5F60;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px dashed #5E5F60;
+            text-decoration: none;
+        }
+        .link-placement a:hover {
+            border: none;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -760,6 +860,9 @@ a:hover                        { text-decoration:none; }
 }
 .indent-b-20 {
     margin-bottom: 20px;
+}
+.indent-r-10 {
+    margin-right: 10px;
 }
 .indent-for-footer {
     margin-left: 20px;
