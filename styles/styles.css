@@ -40,6 +40,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
+    overflow: hidden;
     width: 1080px;
     margin: 25px auto 35px;
 }
@@ -208,6 +209,7 @@ a:hover                        { text-decoration:none; }
             }
             a.bt-toggle:hover {
                 color: #000;
+                border: none;
             }
 
     .form-search-features {
@@ -319,8 +321,8 @@ a:hover                        { text-decoration:none; }
             display: block;
             height: 2px;
             width: 100%;
-            padding-left: 34px;
-            margin: 0 0 20px -17px;
+            padding-left: 40px;
+            margin: 0 0 20px -20px;
             background: #fff;
         }
             .result-search {
@@ -398,20 +400,20 @@ a:hover                        { text-decoration:none; }
             .wrap-all-category-auto li,
             .wrap-all-category-autoservice li {
                 float: left;
+                overflow: hidden;
             }
                 .list-auto-brand,
                 .list-auto-type,
-                .list-auto-city,
-                .wrap-all-category-autoservice ul {
+                .list-auto-city {
                     display: none;
                     overflow: hidden;
                     margin: 10px 20px 20px;
                 }
                     .box-category-auto,
                     .box-category-auto2 {
-                        display: table;
+                        display: table-cell;
                         width: 197px;
-                        height: 50px;
+                        min-height: 55px;
                         vertical-align: middle;
                     }
                     .box-category-auto2 {
@@ -421,6 +423,7 @@ a:hover                        { text-decoration:none; }
                         .wrap-foto-auto,
                         .wrap-foto-auto2 {
                             display: table-cell;
+                            float: left;
                             width: 80px;
                             text-align: center;
                             vertical-align: middle;
@@ -429,6 +432,7 @@ a:hover                        { text-decoration:none; }
                             width: 105px;
                         }
                         .wrap-link-auto {
+                            float: left;
                             display: table-cell;
                             vertical-align: middle;
                         }
@@ -488,11 +492,256 @@ a:hover                        { text-decoration:none; }
                 }
                 .list-advantage .second-advantage:before {
                     width: 53px;
-                    background-position: -149px 0px;
+                    background-position: -149px 0;
                 }
                 .list-advantage .third-advantage:before {
                     width: 32px;
-                    background-position: -336px 0px;
+                    background-position: -336px 0;
+                }
+/*------------------BOX AUTOSERVICES--------------------*/
+    .box-autoservices {
+        padding-bottom: 25px;
+        border-left: 2px solid #F7F7F7;
+        border-right: 2px solid #F7F7F7;
+        border-bottom: 5px solid #F7F7F7;
+    }
+        .wrap-all-category-autoservice {
+            padding: 13px;
+            margin: 20px -1px 0;
+            border: 1px solid #CDCDCD;
+        }
+            .list-sto,
+            .list-car-rental,
+            .list-dealers,
+            .list-trucking {
+                display: none;
+                overflow: hidden;
+            }
+                .foto-autoservices {
+                    float: left;
+                    width: 285px;
+                    height: 134px;
+                    margin-right: 15px;
+                    border: 1px solid #EEEFEF;
+                }
+                .box-address,
+                .box-review {
+                    min-height: 115px;
+                }
+                .box-address {
+                    float: left;
+                    width: 290px;
+                    color: #686868;
+                    font-size: 16px;
+                }
+                    .box-address header {
+                        margin-bottom: 5px;
+                        color: #000;
+                        font-size: 22px;
+                        text-decoration: underline;
+                    }
+                    .address-autoservice:before {
+                        content: '';
+                        display: inline-block;
+                        height: 20px;
+                        width: 11px;
+                        background: url("../images/content/sprite_tel_address.png") no-repeat;
+                    }
+                    .box-address a {
+                        font-size: 16px;
+                    }
+                .box-review {
+                    float: left;
+                    color: #757677;
+                    font-size: 14px;
+                }
+                    .list-stars {
+                        overflow: hidden;
+                        width: 100%;
+                        text-align: right;
+                    }
+                        .list-stars li {
+                            float: none;
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../images/content/sprite_stars.png") no-repeat;
+                            text-indent: 9999px;
+                            cursor: pointer;
+                        }
+                        .list-stars .full-star {
+                            background-position: 0 0;
+                        }
+                        .list-stars .half-star {
+                            background-position: -23px 0;
+                        }
+                        .list-stars .empty-star {
+                            background-position: -46px 0;
+                        }
+                    .box-review a {
+                        color: #000;
+                        font-size: 14px;
+                    }
+                .tel-autoservice {
+                    display: block;
+                    color: #686868;
+                    font-size: 14px;
+                }
+
+        .list-autoservice {
+            width: 100%;
+            max-width: 760px;
+            margin-left: 40px;
+        }
+            .list-autoservice a {
+                color: #d7270d;
+                font-size: 16px;
+            }
+            .list-autoservice a:hover {
+                color: #000;
+            }
+
+/*------------------BOX NEWS------------------*/
+    .wrap-box-news {
+        overflow: hidden;
+        margin-bottom: 10px;
+        background: #F7F7F7;
+    }
+        .box-news {
+            margin: 10px;
+        }
+            .main-article-news {
+                overflow: hidden;
+                margin-bottom: 10px;
+                line-height: 1;
+            }
+                .foto-main-article-autosport {
+                    float: left;
+                    width: 483px;
+                    height: 231px;
+                    margin-right: 20px;
+                }
+                .sub-article-news {
+                    overflow: hidden;
+                }
+                    .sub-article-news > li {
+                        float: left;
+                        width: 263px;
+                        margin-right: 10px;
+                    }
+                    .sub-article-news > li:nth-child(3n) {
+                        margin: 0 0 25px 0;
+                    }
+                        .foto-article-news {
+                            display: block;
+                            width: 264px;
+                            height: 180px;
+                            margin-bottom: 15px;
+                        }
+                        .main-article-news header,
+                        .sub-article-news header {
+                            margin-bottom: 10px;
+                        }
+                            .main-article-news header a,
+                            .sub-article-news header a {
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: #5E5F60;
+                                text-decoration: underline;
+                                line-height: 1;
+                            }
+                            .sub-article-news header a {
+                                font-size: 18px;
+                            }
+                            .main-article-news header a:hover,
+                            .sub-article-news header a:hover {
+                                color: #000;
+                            }
+                        .main-article-news p,
+                        .sub-article-news p {
+                            margin-bottom: 10px;
+                            color: #212a32;
+                            font-size: 18px;
+                        }
+                        .sub-article-news p {
+                            font-size: 16px;
+                        }
+                        .date-article {
+                            display: inline-block;
+                            margin-bottom: 15px;
+                            color: #5e5f60;
+                            line-height: 18px;
+                            font-size: 14px;
+                        }
+                            .date-article:before {
+                                content: '';
+                                float: left;
+                                width: 18px;
+                                height: 18px;
+                                margin-right: 5px;
+                                background: url("../images/content/sprite_article.png") no-repeat;
+                            }
+                        .info-about-article {
+                            overflow: hidden;
+                        }
+                            .info-about-article-camera,
+                            .info-about-article-review,
+                            .info-about-article-comment {
+                                float: left;
+                                margin-right: 15px;
+                                color: #12181d;
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                            .info-about-article-comment {
+                                margin-right: 0;
+                            }
+                                .info-about-article-camera:before,
+                                .info-about-article-review:before,
+                                .info-about-article-comment:before {
+                                    content: '';
+                                    float: left;
+                                    width: 18px;
+                                    height: 18px;
+                                    margin-right: 5px;
+                                    background: url("../images/content/sprite_article.png") no-repeat 0px -33px;
+                                }
+                                .info-about-article-review:before {
+                                    width: 23px;
+                                    background-position: -60px -33px;
+                                }
+                                .info-about-article-comment:before {
+                                    background-position: -145px -33px;
+                                }
+/*---------------------BOX BENEFITS------------------*/
+    .box-benefits {
+        overflow: hidden;
+        padding-bottom: 30px;
+        background: #F7F7F7;
+    }
+        .list-benefits {
+            overflow: hidden;
+            width: 670px;
+            margin: 30px auto 0;
+        }
+            .list-benefits > li {
+                float: left;
+                width: 190px;
+                padding: 0 15px;
+                text-align: center;
+            }
+                .icon-benefits {
+                    height: 85px;
+                }
+                .header-benefits {
+                    margin-bottom: 10px;
+                    color: #d7260d;
+                    font-size: 20px;
+                    line-height: 1;
+                 }
+                .list-benefits p {
+                    color: #686868;
+                    font-size: 16px;
                 }
 
 /*----------------------------------------------------------------------------------*/

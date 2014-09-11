@@ -91,7 +91,7 @@
         <main class="content">
             <section class="wrap-form-search-features">
                 <h2 class="header-second">Поиск по параметрам</h2>
-                <span class="toggle-search-form"><a href="#" class="bt-toggle">Свернуть поиск</a></span>
+                <span class="toggle-search-form"><a href="#" id="bt-toggle" class="bt-toggle">Свернуть поиск</a></span>
 
                 <form action="#" method="post" class="form-search-features">
                     <ul class="select-box-search-form">
@@ -690,7 +690,7 @@
                 </footer>
             </section><!--end WRAP LIST CARS-->
 
-            <section>
+            <section class="box-autoservices">
                 <h2 class="header-second">Автосервисы</h2>
 
                 <ul id="list-autoservice-auto_js" class="list-autoservice-auto">
@@ -712,13 +712,222 @@
                 </ul><!--end LIST FILTER AUTO-->
 
                 <ul class="wrap-all-category-autoservice indent-b-20">
-                    <li class="show_js"><ul class="list-sto">111111111111</ul></li>
-                    <li><ul class="list-car-rental">22222222222222</ul></li>
-                    <li><ul class="list-dealers">3333333333333</ul></li>
-                    <li><ul class="list-trucking">4444444</ul></li>
-                </ul>
-            </section>
+                    <li class="show_js">
+                        <ul class="list-sto">
+                            <li>
+                                <img class="foto-autoservices" src="images/content/foto-autoservices.jpg" alt="Foto"/>
 
+                                <div class="clearfix float-l">
+                                    <div class="box-address">
+                                        <header>БелАвтоСервис</header>
+                                        <span class="address-autoservice">Минск, ул. Куприянова, 4</span>
+                                        <a href="#" class="bt-toggle bt-advanced-search">На карте</a>
+                                    </div><!--end BOX ADDRESS-->
+
+                                    <div class="box-review">
+                                        <ul class="list-stars">
+                                            <li class="full-star">1</li>
+                                            <li class="full-star">2</li>
+                                            <li class="half-star">3</li>
+                                            <li class="empty-star">4</li>
+                                            <li class="empty-star">5</li>
+                                        </ul>
+                                        <span>Средняя оценка <span class="average">4.5</span>,
+                                            Отзывов <a href="#">15</a>
+                                        </span>
+                                    </div><!--end BOX-REVIEW-->
+                                </div><!--end CLEARFIX-->
+
+                                <span class="tel-autoservice">+375 29 3216548, +375 29 3216548</span>
+                            </li>
+                        </ul><!--end LIST STO-->
+                    </li>
+
+                    <li>
+                        <ul class="list-car-rental">22222222222222</ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-dealers">3333333333333</ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-trucking">4444444</ul>
+                    </li>
+                </ul>
+
+                <table class="list-autoservice">
+                    <tr>
+                        <td>
+                            <a href="#">АЗС</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Грузоперевозки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автодиллеры</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автостоянки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автохаусы</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="#">Шиномонтаж</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автомойки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">СТО</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автопрокат</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автошколы</a>
+                        </td>
+                    </tr>
+                </table>
+            </section><!--end BOX AUTOSERVICES-->
+
+            <section class="wrap-box-news">
+                <h2 class="header-second">Новости</h2>
+
+                <div class="box-news">
+                    <article class="main-article-news">
+                        <img class="foto-main-article-autosport" src="images/content/main-foto-car.jpg" alt="Foto">
+
+                        <header>
+                            <a href="#">Водитель маршрутки столкнулся с мотоцыклистом из-за потери управления</a>
+                        </header>
+                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                        <footer>
+                            <span class="date-article">20.06.2014, 11:03</span>
+                            <ul class="info-about-article">
+                                <li class="info-about-article-camera">(55)</li>
+                                <li class="info-about-article-review">(12345)</li>
+                                <li class="info-about-article-comment">(1223)</li>
+                            </ul>
+                        </footer>
+                    </article>
+
+                    <ul class="sub-article-news">
+                        <li>
+                            <article>
+                                <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                <header>
+                                    <a href="#">Водитель маршрутки столкнулся с мотоцыклистом из-за потери управления</a>
+                                </header>
+                                <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                <footer>
+                                    <span class="date-article">20.06.2014, 11:03</span>
+                                    <ul class="info-about-article">
+                                        <li class="info-about-article-camera">(55)</li>
+                                        <li class="info-about-article-review">(12345)</li>
+                                        <li class="info-about-article-comment">(1223)</li>
+                                    </ul>
+                                </footer>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                <header>
+                                    <a href="#">Водитель маршрутки столкнулся с мотоцыклистом из-за потери управления</a>
+                                </header>
+                                <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                <footer>
+                                    <span class="date-article">20.06.2014, 11:03</span>
+                                    <ul class="info-about-article">
+                                        <li class="info-about-article-camera">(55)</li>
+                                        <li class="info-about-article-review">(12345)</li>
+                                        <li class="info-about-article-comment">(1223)</li>
+                                    </ul>
+                                </footer>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                <header>
+                                    <a href="#">Водитель маршрутки столкнулся с мотоцыклистом из-за потери управления</a>
+                                </header>
+                                <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                <footer>
+                                    <span class="date-article">20.06.2014, 11:03</span>
+                                    <ul class="info-about-article">
+                                        <li class="info-about-article-camera">(55)</li>
+                                        <li class="info-about-article-review">(12345)</li>
+                                        <li class="info-about-article-comment">(1223)</li>
+                                    </ul>
+                                </footer>
+                            </article>
+                        </li>
+                    </ul><!--end SUB ARTICLE NEWS-->
+                </div><!--end BOX NEWS-->
+
+                <footer class="footer-section">
+                    <div class="empty-box">
+                        <span class="size-empty-box">728X90</span>
+                    </div>
+                </footer>
+            </section><!--end WRAP BOX NEWS-->
+
+            <section class="box-benefits">
+                <h2 class="header-second">Почему Forsage?</h2>
+                
+                <ul class="list-benefits">
+                    <li>
+                        <div class="icon-benefits">
+                            <img src="images/content/new_clients.png" alt="new client">
+                        </div>
+
+                        <h3 class="header-benefits">Новые<br>клиенты</h3>
+                        <p>Посещаемость нашего каталога составляет 30000 уникальных посетителей в месяц,
+                           70% пользователей впервые увидят Ваш сервис.</p>
+                    </li>
+
+                    <li>
+                        <div class="icon-benefits">
+                            <img src="images/content/max_opportunity.png" alt="new client">
+                        </div>
+
+                        <h3 class="header-benefits">Максимум возможностей</h3>
+                        <p>Размещение на карте, добавление видео, фотографий, ссылки на сайт.</p>
+                    </li>
+
+                    <li>
+                        <div class="icon-benefits">
+                            <img src="images/content/little_price.png" alt="new client">
+                        </div>
+
+                        <h3 class="header-benefits">Низкие<br>цены</h3>
+                        <p>Платные тарифы от 15у.е., минимум сторонней рекламы, всего три рекламных места.</p>
+                    </li>
+                </ul>
+            </section><!--end BOX BENEFITS-->
         </main>
 
         <aside class="side-bar"></aside>

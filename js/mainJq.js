@@ -11,7 +11,7 @@
 
     /*toggle form*/
     var toggleButton = $('.toggle-search-form'),
-        toggleButtonLink = $('.bt-toggle'),
+        toggleButtonLink = $('#bt-toggle'),
         toggleElementForm = $('.form-search-features');
 
     toggleButton.on('click', function(e){
