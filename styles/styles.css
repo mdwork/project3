@@ -360,28 +360,30 @@ a:hover                        { text-decoration:none; }
         overflow: hidden;
         background: #F7F7F7;
     }
-        .list-filter-auto {
+        .list-filter-auto,
+        .list-autoservice-auto {
             overflow: hidden;
             margin: 20px 20px 5px;
         }
-            .list-filter-auto li {
+            .list-filter-auto li,
+            .list-autoservice-auto li{
                 float: left;
                 margin-left: 15px;
             }
-            .list-filter-auto li:first-child {
+            .list-filter-auto li:first-child,
+            .list-autoservice-auto li:first-child {
                 margin-left: 0;
             }
-            .active-category-auto {
-
-            }
-                .list-filter-auto a {
+                .list-filter-auto a,
+                .list-autoservice-auto a {
                     display: block;
                     color: #d7270d;
                     border-bottom: 1px dashed #d7270d;
                     font-size: 17px;
                     text-decoration: none;
                 }
-                .list-filter-auto a:hover {
+                .list-filter-auto a:hover,
+                .list-autoservice-auto a:hover {
                     border-bottom: none;
                 }
                 .active-category-auto a {
@@ -389,10 +391,12 @@ a:hover                        { text-decoration:none; }
                     font-weight: bold;
                     border: none;
                 }
-        .wrap-all-category-auto {
+        .wrap-all-category-auto,
+        .wrap-all-category-autoservice {
             overflow: hidden;
         }
-            .wrap-all-category-auto li {
+            .wrap-all-category-auto li,
+            .wrap-all-category-autoservice li {
                 float: left;
             }
                 .list-auto-brand,
@@ -402,46 +406,40 @@ a:hover                        { text-decoration:none; }
                     overflow: hidden;
                     margin: 10px 20px 20px;
                 }
-                    .first-column,
-                    .second-column,
-                    .third-column,
-                    .fourth-column{
+                    .box-category-auto,
+                    .box-category-auto2 {
+                        display: table;
                         width: 197px;
+                        height: 50px;
+                        vertical-align: middle;
                     }
-                        .box-category-auto,
-                        .box-category-auto2 {
-                            display: table;
-                            width: 197px;
-                            height: 50px;
+                    .box-category-auto2 {
+                        width: 210px;
+                        margin-right: 50px;
+                    }
+                        .wrap-foto-auto,
+                        .wrap-foto-auto2 {
+                            display: table-cell;
+                            width: 80px;
+                            text-align: center;
                             vertical-align: middle;
                         }
-                        .box-category-auto2 {
-                            width: 210px;
-                            margin-right: 50px;
+                        .wrap-foto-auto2 {
+                            width: 105px;
                         }
-                            .wrap-foto-auto,
-                            .wrap-foto-auto2 {
-                                display: table-cell;
-                                width: 80px;
-                                text-align: center;
-                                vertical-align: middle;
-                            }
-                            .wrap-foto-auto2 {
-                                width: 105px;
-                            }
-                            .wrap-link-auto {
-                                display: table-cell;
-                                vertical-align: middle;
-                            }
-                                a.link-category-auto {
-                                    color: #12181d;
-                                    font-size: 15px;
-                                }
-                        .header-city {
-                            color: #5e5f60;
-                            font-size: 19px;
-                            font-weight: 400;
+                        .wrap-link-auto {
+                            display: table-cell;
+                            vertical-align: middle;
                         }
+                            a.link-category-auto {
+                                color: #12181d;
+                                font-size: 15px;
+                            }
+                    .header-city {
+                        color: #5e5f60;
+                        font-size: 19px;
+                        font-weight: 400;
+                    }
 
         .empty-box {
             position: relative;
