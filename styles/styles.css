@@ -986,6 +986,7 @@ a:hover                        { text-decoration:none; }
 /*---------------------------------POPUP WINDOWS------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 #bg-popup {
+    display: none;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -993,6 +994,126 @@ a:hover                        { text-decoration:none; }
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+    #wrap-popup {
+        position: relative;
+        background: #fff;
+    }
+    .icon-close_js:after {
+        content: 'х';
+        display: inline-table;
+        position: absolute;
+        top: 0;
+        right: -34px;
+        width: 34px;
+        height: 34px;
+        color: #fff;
+        background: #5E5F60;
+        font: 24px verdana, sans-serif;
+        text-align: center;
+        cursor: pointer;
+    }
+        .wrap-reg-autoreg-form {
+            width: 370px;
+            padding: 30px 35px 40px;
+        }
+            a.bt-reg {
+                border-width: 2px;
+                font-size: 32px;
+            }
+            a.active-page {
+                color: #5e5f60;
+                border-color: #fff;
+            }
+            a.active-page:hover {
+                color: #5e5f60;
+            }
+
+            #reg-form {
+
+            }
+                .list-reg-inputs {
+                    margin-top: 25px;
+                }
+                    .list-reg-inputs li {
+                        margin-bottom: 10px;
+                    }
+                        .list-reg-inputs label,
+                        .name-list-soc-link {
+                            display: inline-block;
+                            color: #5e5f60;
+                            font-size: 15px;
+                        }
+                        .name-list-soc-link {
+                            display: block;
+                        }
+                            .icon-star:after {
+                                content: '*';
+                                display: inline-block;
+                                margin-bottom: 5px;
+                                color: #d7270d;
+                            }
+                            .list-reg-inputs input {
+                                display: block;
+                                width: 245px;
+                                height: 22px;
+                                padding: 0 5px;
+                                border: 1px solid #BFBFBF;
+                                font-size: 15px;
+                            }
+                        .tooltip-form {
+                            display: inline-block;
+                            padding: 1px 9px;
+                            color: #fff;
+                            background: #909090;
+                            font-size: 16px;
+                            font-weight: bold;
+                            cursor: pointer;
+
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            border-radius: 4px;
+                        }
+                .list-soc-link {
+                    overflow: hidden;
+                    margin: 10px 0 20px;
+                }
+                    .list-soc-link li {
+                        display: inline-block;
+                        margin-left: 25px;
+                    }
+                    .list-soc-link li:first-child {
+                        margin-left: 0;
+                    }
+                    .list-soc-link li:hover {
+                        opacity: 0.8;
+                    }
+                        .list-soc-link a {
+                            display: block;
+                            height: 37px;
+                            width: 27px;
+                            background: url("../images/sprite_social.png") no-repeat;
+                            text-indent: -9999px;
+                        }
+                        .icon-fb a {
+                            width: 17px;
+                            background-position: -62px 0;
+                        }
+                        .icon-google a {
+                            width: 36px;
+                            background-position: -114px 0;
+                        }
+                        .icon-od a {
+                            width: 22px;
+                            background-position: -170px 0;
+                        }
+                        .icon-yandex a {
+                            width: 16px;
+                            background-position: -220px 0;
+                        }
+                        .icon-vk a {
+                            background-position: -267px 0;
+                        }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/

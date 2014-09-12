@@ -18,8 +18,12 @@
             </h1><!--end MAIN LOGO-->
 
             <div class="wrap-registration">
-                <span class="link-entry"><a href="#">Войдите</a></span>
+                <span class="link-entry">
+                    <a href="#" id="popup-autoreg">Войдите</a>
+                </span>
+
                 <span>или</span>
+
                 <span class="link-registration">
                     <a href="#" id="popup-registration">зарегистрируйтесь</a>
                 </span>
@@ -1126,8 +1130,51 @@
             <form action="#" method="post">
 
             </form>
-        </div>
-    </div>
+
+            <div class="wrap-reg-autoreg-form">
+                <div class="clearfix">
+                    <a id="link-reg" class="active-page bt-toggle bt-advanced-search bt-reg float-l" href="#">Регистрация</a>
+                    <a id="link-autoreg" class="bt-toggle bt-advanced-search bt-reg float-r" href="#">Авторизация</a>
+                </div>
+
+                <form id="reg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul>
+
+                    <span class="name-list-soc-link">Войти через</span>
+                    <ul class="list-soc-link">
+                        <li class="icon-tw"><a href="#">twitter</a></li>
+                        <li class="icon-fb"><a href="#">facebook</a></li>
+                        <li class="icon-google"><a href="#">google+</a></li>
+                        <li class="icon-od"><a href="#">одноклассники</a></li>
+                        <li class="icon-yandex"><a href="#">яндекс</a></li>
+                        <li class="icon-vk"><a href="#">вконтакте</a></li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Войти">
+                </form><!--end REG FORM-->
+
+                <form id="autoreg-form" action="#" method="post">
+
+                </form><!--end AUTOREG FORM-->
+            </div><!--end WRAP REG AUTOREG FORM-->
+        </div><!--end WRAP POPUP-->
+    </div><!--end BG POPUP-->
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/mainJq.js"></script>
