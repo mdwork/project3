@@ -986,8 +986,9 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.show_js > ul {
-    display: block;
+.show_js > ul,
+.show_js {
+    display: block !important;
 }
 .indent-b-20 {
     margin-bottom: 20px;
@@ -1002,4 +1003,10 @@ a:hover                        { text-decoration:none; }
 }
 .no-valid-email_js {
     border-color: #DB0000;
+}
+.black {
+    color: #000000;
+}
+.red {
+    color: #d7270d;
 }
