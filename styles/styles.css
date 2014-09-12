@@ -48,68 +48,71 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.header {
-    width: 1080px;
-    margin: 15px auto;
+.wrap-header {
+    overflow: hidden;
 }
-    .main-logo {
-        float: left;
+    .header {
+        width: 1080px;
+        margin: 15px auto;
     }
-    .main-logo,
-    .main-logo img {
-        overflow: hidden;
-        width: 373px;
-        height: 76px;
-    }
-        .main-logo a,
+        .main-logo {
+            float: left;
+        }
+        .main-logo,
         .main-logo img {
-            display: block;
+            overflow: hidden;
+            width: 373px;
+            height: 76px;
         }
-
-    .wrap-registration {
-        float: right;
-        margin-top: 30px;
-        color: #909090;
-        font-size: 16px;
-    }
-        .link-entry {
-            display: inline-block;
-            height: 23px;
-            padding-left: 25px;
-            margin-right: 5px;
-            background: url("../images/header/icon-lock.png") no-repeat;
-        }
-        .link-registration {
-            display: inline-block;
-            height: 22px;
-            padding-left: 25px;
-            margin-left: 5px;
-            background: url("../images/header/icon-pencil.png") 0 2px no-repeat;
-        }
-            .wrap-registration a {
-                color: #363b3d;
-                font-size: 16px;
-                border-bottom: 1px dashed #363b3d;
-                text-decoration: none;
-            }
-            .wrap-registration a:hover {
-                border-bottom: none;
+            .main-logo a,
+            .main-logo img {
+                display: block;
             }
 
-    .add-ads {
-        display: inline-block;
-        margin: 30px 0 0 90px;
-        padding-left: 28px;
-        background: url("../images/header/icon-plus.png") no-repeat;
-        color: #d7270d;
-        font-size: 16px;
-        text-transform: uppercase;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    .add-ads:hover {
-        text-decoration: none;
-    }
+        .wrap-registration {
+            float: right;
+            margin-top: 30px;
+            color: #909090;
+            font-size: 16px;
+        }
+            .link-entry {
+                display: inline-block;
+                height: 23px;
+                padding-left: 25px;
+                margin-right: 5px;
+                background: url("../images/header/icon-lock.png") no-repeat;
+            }
+            .link-registration {
+                display: inline-block;
+                height: 22px;
+                padding-left: 25px;
+                margin-left: 5px;
+                background: url("../images/header/icon-pencil.png") 0 2px no-repeat;
+            }
+                .wrap-registration a {
+                    color: #363b3d;
+                    font-size: 16px;
+                    border-bottom: 1px dashed #363b3d;
+                    text-decoration: none;
+                }
+                .wrap-registration a:hover {
+                    border-bottom: none;
+                }
+
+        .add-ads {
+            display: inline-block;
+            margin: 30px 0 0 90px;
+            padding-left: 28px;
+            background: url("../images/header/icon-plus.png") no-repeat;
+            color: #d7270d;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .add-ads:hover {
+            text-decoration: none;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -983,7 +986,12 @@ a:hover                        { text-decoration:none; }
 /*---------------------------------POPUP WINDOWS------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 #bg-popup {
-    position: fixed;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
@@ -1011,4 +1019,8 @@ a:hover                        { text-decoration:none; }
 }
 .red {
     color: #d7270d;
+}
+#wrap-popup {
+    position: fixed;
+    float: left;
 }

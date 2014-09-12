@@ -126,4 +126,18 @@
 
     });
     /*end*/
+
+    /*popup*/
+    $('#bg-popup').height($(document).height()).css('display','block');
+
+    var fotoPopup = $('#wrap-popup'),
+        fotoInPopupW = fotoPopup.width(),
+        fotoInPopupH = fotoPopup.height(),
+        clientW = document.body.clientWidth,
+        clientH = document.body.clientHeight;
+
+    fotoPopup.css({
+        'marginTop': clientH/2 - fotoInPopupH/2 + 'px',
+        'marginLeft': clientW/2 - fotoInPopupW / 2 + 'px'
+    });
 })(jQuery);
