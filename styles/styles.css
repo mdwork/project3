@@ -996,6 +996,6 @@ a:hover                        { text-decoration:none; }
     margin-right: 20px;
     margin-bottom: 25px;
 }
-.no-valid-email {
+.no-valid-email_js {
     border-color: #DB0000;
 }

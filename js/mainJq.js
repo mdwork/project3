@@ -111,12 +111,12 @@
         if(emailValid.val() == '' || emailValid == ' ') {
             e.preventDefault();
             $('#bt-subscription_js').css('backgroundColor','#ccc');
-            emailValid.addClass('no-valid-email');
+            emailValid.addClass('no-valid-email_js');
 
             emailValid.blur(function(e){
                 if(emailValid.val() != '' && emailValid != ' ') {
                     $('#bt-subscription_js').css('backgroundColor','#D7270D');
-                    emailValid.removeClass('no-valid-email');
+                    emailValid.removeClass('no-valid-email_js');
                 }
                 else {
                     $('#bt-subscription_js').css('backgroundColor','#ccc');
