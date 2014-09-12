@@ -914,7 +914,68 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-footer {
+    padding: 25px 25px 20px;
+    background: #D8D8D8;
+}
+    .footer {
+        overflow: hidden;
+        width: 1030px;
+        margin: 0 auto;
+    }
+        .footer-logo {
+            float: left;
+            margin: 30px 50px 0 0;
+        }
+            .footer-logo img {
+                display: block;
+                width: 113px;
+                height: 24px;
+            }
+        .center-block-footer {
+            float: left;
+        }
+            .copyright-box {
+                margin-bottom: 20px;
+                color: #2a353b;
+                font-size: 15px;
+            }
+                .copyright-box span {
+                    display: block;
+                }
 
+            .nav-footer {
+                overflow: hidden;
+            }
+                .nav-footer li {
+                    float: left;
+                    margin-left: 15px;
+                }
+                .nav-footer li:first-child {
+                    margin-left: 0;
+                }
+                    .nav-footer li a {
+                        color: #d7270e;
+                        font-size: 18px;
+                    }
+        .partners-footer {
+            float: right;
+        }
+            .partners-footer a {
+                display: inline-block;
+                width: 160px;
+                margin-bottom: 10px;
+                color: #2a353b;
+                font-size: 15px;
+            }
+            .partners-footer .partners-foto {
+                display: block;
+            }
+                .partners-foto img {
+                    display: block;
+                    width: 86px;
+                    height: 29px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
