@@ -1245,6 +1245,20 @@ li.third-advantage-placement {
     width: 41px;
     background: url("../images/popup/arrow_popup_bg.png") -41px 0;
 }
+.unreg-tooltip {
+    width: 310px;
+    margin-left: 28px;
+    line-height: 22px;
+    font-size: 27px;
+    text-align: right;
+}
+.unreg-tooltip b {
+    font-size: 30px;
+}
+#unregistered-box {
+    padding-bottom: 306px;
+    background: url("../images/popup/unregistered-box_bg.png") no-repeat bottom center;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
