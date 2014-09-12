@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Index</title>
+    <title>Forsage - Автомобильный портал</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
@@ -1010,7 +1010,7 @@
 
             <div class="box-special-placement">
                 <span class="link-placement">
-                    <a href="#">Разместиться здесь</a>
+                    <a id="popup-tooltip_js" href="#">Разместиться здесь</a>
                 </span>
 
                 <article class="ad-sidebar">
@@ -1127,8 +1127,85 @@
     <!--POPUP WINDOWS-->
     <div id="bg-popup">
         <div id="wrap-popup">
-            <form action="#" method="post">
+            <form id="popup-reg" action="#" method="post">
+                <span class="sell-car">Продать машину быстрее через блок спецразмещения</span>
 
+                <header>
+                    <h3>Основные проблемы обычного размещения</h3>
+                </header>
+                <ul class="list-advantage-placement">
+                    <li class="first-advantage-placement">
+                        Ничем не отличается от остальных
+                    </li>
+                    <li class="second-advantage-placement">
+                        Быстро спускается вниз, т.к. появляются новые
+                    </li>
+                    <li class="third-advantage-placement">
+                        Рассчитывали продать быстро, а приходится ждать
+                    </li>
+                </ul>
+
+                <section class="reg-block-1">
+                    <div class="black our-help-1">Мы вам поможем <span class="red">получить деньги <br>за машину быстрее</span></div>
+                    <div class="our-help-2">Разместим в самых выгодных местах сайта <br>в спецразмещении (будет первым в блоке, пока <br>не разместит кто-либо другой)</div>
+                </section>
+
+                <section class="reg-block-2">
+                    <div class="black">Размещенное в блоке объявление просматривают <span class="red">в 8-12 раз больше обычных</span></div>
+                </section>
+
+                <section id="unregistered-box" class="show_js">
+                    <span class="unreg-tooltip">Для размещения в блоке <span>авторизуйтесь</span></span>
+
+                    <div class="wrap-registration">
+                        <span class="link-entry"><a href="#">Войдите</a></span>
+                        <span>или</span>
+                        <span class="link-registration">
+                            <a href="#" id="popup-registration">зарегистрируйтесь</a>
+                        </span>
+                    </div>
+                </section><!--end UNREGISTERED-BOX-->
+
+                <section id="registered-box">
+                    <span class="reg-tooltip">Как здесь разместиться?</span>
+
+                    <ul>
+                        <li>
+                            <span class="name-select-subscription">Выберите вариант пополнения</span>
+                            <select class="select-subscription">
+                                <option>МТС</option>
+                                <option>BeeLine</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <span class="name-select-subscription">Количество автоматических поднятий</span>
+                            <select class="select-subscription">
+                                <option>50</option>
+                                <option>100</option>
+                                <option>200</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <span class="name-select-subscription">Срок поднятий</span>
+                            <select class="select-subscription">
+                                <option>1 день</option>
+                                <option>2 дня</option>
+                                <option>4 дня</option>
+                                <option>7 дней</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <input type="checkbox" id="check-terms-service">
+                    <a href="#" class="terms-service">Условия предоставления услуг</a>
+
+                    <div>
+                        <span class="total-payment">Итого к оплате: 27500 руб.</span>
+                        <input type="submit" value="Отправить">
+                    </div>
+                </section><!--end REGISTERED-BOX-->
             </form>
 
             <div class="wrap-reg-autoreg-form">

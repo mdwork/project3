@@ -1013,6 +1013,7 @@ a:hover                        { text-decoration:none; }
         cursor: pointer;
     }
         .wrap-reg-autoreg-form {
+            display: none;
             width: 370px;
             padding: 30px 35px 40px;
         }
@@ -1114,6 +1115,143 @@ a:hover                        { text-decoration:none; }
                             background-position: -267px 0;
                         }
 
+    #wrap-popup {
+        position: fixed;
+        float: left;
+        background-color: #ffffff;
+    }
+        #popup-reg {
+            display: none;
+            width: 834px;
+            padding: 11px 9px;
+        }
+#unregistered-box,
+#registered-box {
+    display: none;
+}
+.sell-car {
+    display: block;
+    margin: 7px 19px 18px;
+    font-size: 32px;
+    color: #5e5f60;
+}
+#popup-reg header h3 {
+    margin: 0 19px 25px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2e3439;
+}
+.list-advantage-placement {
+    position: relative;
+    height: 56px;
+    margin-bottom: 160px;
+}
+.list-advantage-placement:after {
+    content: "";
+    position: absolute;
+    top: 82px;
+    left: 386px;
+    height: 94px;
+    width: 41px;
+    background: url("../images/popup/arrow_popup_bg.png") 0 0;
+}
+.list-advantage-placement li {
+    position: relative;
+    float: left;
+    padding-left: 93px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #686868;
+}
+.first-advantage-placement {
+    width: 158px;
+}
+.first-advantage-placement:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 27px;
+    width: 54px;
+    height: 54px;
+    background: url("../images/popup/advantage-placement-sprite.png") 0 -2px;
+}
+.second-advantage-placement {
+    width: 180px;
+}
+.second-advantage-placement:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 27px;
+    width: 56px;
+    height: 56px;
+    background: url("../images/popup/advantage-placement-sprite.png") -251px 0;
+}
+li.third-advantage-placement {
+    width: 217px;
+    padding-left: 75px;
+}
+.third-advantage-placement:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 27px;
+    width: 37px;
+    height: 52px;
+    background: url("../images/popup/advantage-placement-sprite.png") 37px -2px;
+}
+.reg-block-1 {
+    margin-bottom: 50px;
+}
+.our-help-1 {
+    float: left;
+    width: 270px;
+    margin-left: 42px;
+    font-size: 30px;
+    line-height: 26px;
+}
+.our-help-2 {
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    padding-left: 55px;
+    line-height: 23px;
+    font-size: 17px;
+}
+.our-help-2:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 34px;
+    width: 12px;
+    height: 11px;
+    background: url("../images/popup/reg_block_pointer.png");
+}
+.reg-block-2 {
+    position: relative;
+    padding: 33px 40px 0 224px;
+    margin-bottom: 122px;
+    line-height: 25px;
+    font-size: 25px;
+}
+.reg-block-2:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 84px;
+    width: 120px;
+    height: 121px;
+    background: url("../images/popup/fact_img.png");
+}
+.reg-block-2:after {
+    content: "";
+    position: absolute;
+    top: 128px;
+    left: 386px;
+    height: 94px;
+    width: 41px;
+    background: url("../images/popup/arrow_popup_bg.png") -41px 0;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/

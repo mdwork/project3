@@ -168,5 +168,9 @@
     var popupRegestration = $('#popup-registration'),
         formReg = $('.wrap-reg-autoreg-form');
     popupWindow(popupRegestration, formReg);
+
+    var popupTooltip = $('#popup-tooltip_js'),
+        formTooltip = $('#popup-reg');
+    popupWindow(popupTooltip, formTooltip);
     /*end*/
 })(jQuery);
