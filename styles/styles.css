@@ -48,9 +48,6 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrap-header {
-    overflow: hidden;
-}
     .header {
         width: 1080px;
         margin: 15px auto;
@@ -988,7 +985,7 @@ a:hover                        { text-decoration:none; }
 #bg-popup {
     display: none;
     position: absolute;
-    z-index: 10;
+    z-index: 5;
     top: 0;
     left: 0;
     width: 100%;
@@ -1278,8 +1275,4 @@ li.third-advantage-placement {
 }
 .red {
     color: #d7270d;
-}
-#wrap-popup {
-    position: fixed;
-    float: left;
 }
