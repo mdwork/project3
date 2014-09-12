@@ -8,6 +8,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 	margin:0;
 	outline:none;
 	list-style:none;
+
 }
 select, input, textarea        { font-size:12px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
@@ -827,8 +828,8 @@ a:hover                        { text-decoration:none; }
     }
 
     .box-special-placement {
-        margin-top: 10px;
-        padding: 10px 8px 20px;
+        margin: 10px 0;
+        padding: 10px 8px 0;
         border: 1px solid #E4E4E4;
         text-align: center;
     }
@@ -836,18 +837,80 @@ a:hover                        { text-decoration:none; }
             display: inline-block;
             height: 30px;
             padding-left: 25px;
-            background: url("../images/content/icon-placement.png") no-repeat;
+            margin-bottom: 10px;
+            background: url("../images/SideBar/icon-placement.png") no-repeat;
         }
-        .link-placement a {
-            color: #5E5F60;
-            font-size: 18px;
+            .link-placement a {
+                color: #5E5F60;
+                font-size: 18px;
+                font-weight: bold;
+                border-bottom: 1px dashed #5E5F60;
+                text-decoration: none;
+            }
+            .link-placement a:hover {
+                border: none;
+            }
+            .ad-sidebar {
+                margin-bottom: 25px;
+                text-align: left;
+            }
+                .ad-sidebar img {
+                    display: block;
+                    width: 220px;
+                    height: 136px;
+                    margin-bottom: 10px;
+                    border: 1px solid #686868;
+                }
+                a.name-ad-sidebar {
+                    float: left;
+                    width: 100px;
+                    margin-left: 8px;
+                    margin-bottom: 5px;
+                    color: #d7260e;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .price-ad-sidebar {
+                    float: right;
+                    margin-bottom: 5px;
+                    color: #000;
+                    font-size: 25px;
+                }
+                .info-ad-sidebar {
+                    margin-left: 8px;
+                    color: #7a7a7a;
+                    font-size: 15px;
+                }
+
+    .box-fuel-prices {
+        overflow: hidden;
+        padding: 0 17px;
+        border: 1px solid #E4E4E4;
+        border-top: none;
+    }
+        .box-fuel-prices li {
+            padding: 15px 0 15px 10px;
+            color: #12181d;
+            font-size: 14px;
+            border-bottom: 1px solid #525252;
+        }
+        .box-fuel-prices li:first-child {
             font-weight: bold;
-            border-bottom: 1px dashed #5E5F60;
-            text-decoration: none;
+            border-bottom-width: 3px;
         }
-        .link-placement a:hover {
-            border: none;
+        .box-fuel-prices li:last-child {
+            color: #5e5f60;
+            font-style: italic;
+            border-bottom: none;
+            line-height: 1;
         }
+            .left-column-fuel-prices {
+                float: left;
+            }
+            .right-column-fuel-prices {
+                display: block;
+                margin-left: 150px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
