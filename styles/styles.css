@@ -985,15 +985,16 @@ a:hover                        { text-decoration:none; }
 #bg-popup {
     display: none;
     position: absolute;
-    z-index: 5;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
     #wrap-popup {
-        position: relative;
-        background: #fff;
+        position: fixed;
+        float: left;
+        background-color: #ffffff;
     }
     .icon-close_js:after {
         content: 'х';
@@ -1112,11 +1113,6 @@ a:hover                        { text-decoration:none; }
                             background-position: -267px 0;
                         }
 
-    #wrap-popup {
-        position: fixed;
-        float: left;
-        background-color: #ffffff;
-    }
         #popup-reg {
             display: none;
             width: 834px;
