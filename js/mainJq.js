@@ -104,4 +104,26 @@
         }
     });
     /*end*/
+
+    /*valid email*/
+    $('#submit-subscription_js').submit(function(e){
+        var emailValid = $('#valid-email_js');
+        if(emailValid.val() == '' || emailValid == ' ') {
+            e.preventDefault();
+            $('#bt-subscription_js').css('backgroundColor','#ccc');
+            emailValid.addClass('no-valid-email');
+
+            emailValid.blur(function(e){
+                if(emailValid.val() != '' && emailValid != ' ') {
+                    $('#bt-subscription_js').css('backgroundColor','#D7270D');
+                    emailValid.removeClass('no-valid-email');
+                }
+                else {
+                    $('#bt-subscription_js').css('backgroundColor','#ccc');
+                }
+            });
+        }
+
+    });
+    /*end*/
 })(jQuery);

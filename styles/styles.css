@@ -441,6 +441,9 @@ a:hover                        { text-decoration:none; }
                                 color: #12181d;
                                 font-size: 15px;
                             }
+                            a.link-category-auto:hover {
+                                color: red;
+                            }
                     .header-city {
                         color: #5e5f60;
                         font-size: 19px;
@@ -992,4 +995,7 @@ a:hover                        { text-decoration:none; }
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 25px;
+}
+.no-valid-email {
+    border-color: #DB0000;
 }
