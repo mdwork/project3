@@ -152,11 +152,8 @@
             bgPopup.height($(document).height());
 
             var fotoInPopupW = fotoPopup.width(),
-                fotoInPopupH = fotoPopup.height(),
                 clientW = document.body.clientWidth,
-                clientH = document.body.clientHeight,
                 scrollTop = window.pageYOffset;
-            console.log(scrollTop);
 
             fotoPopup.css({
                 'marginTop': scrollTop + 100 + 'px',
