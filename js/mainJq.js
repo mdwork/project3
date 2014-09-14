@@ -132,7 +132,7 @@
     /*end*/
 
     /*popup function*/
-    function popupWindow(targetClick, showCurrentForm) {
+    function popupWindow(targetClick, showCurrentForm, subForm) {
         targetClick.on('click', function (e) {
             e.preventDefault();
 
@@ -142,12 +142,22 @@
             bgPopup.addClass('show_js');
             fotoPopup.prepend('<span class="icon-close_js"></span>');
             showCurrentForm.addClass('show_js');
+            try {
+                subForm.addClass('show_js');
+            }
+            catch (err) {}
 
             $('.icon-close_js').on('click', function() {
                 bgPopup.removeClass('show_js');
                 $('.icon-close_js').remove();
                 showCurrentForm.removeClass('show_js');
+
+                try {
+                    subForm.removeClass('show_js');
+                }
+                catch (err) {}
             });
+
 
             bgPopup.height($(document).height());
 
@@ -165,11 +175,13 @@
 
     /*popup call*/
     var popupRegestration = $('#popup-registration'),
-        formReg = $('.wrap-reg-autoreg-form');
-    popupWindow(popupRegestration, formReg);
+        formReg = $('.wrap-reg-autoreg-form'),
+        subForm = $('#reg-form');
+    popupWindow(popupRegestration, formReg, subForm);
 
     var popupTooltip = $('#popup-tooltip_js'),
-        formTooltip = $('#popup-reg');
-    popupWindow(popupTooltip, formTooltip);
+        formTooltip = $('#popup-reg'),
+        unregForm = $('#unregistered-box');
+    popupWindow(popupTooltip, formTooltip, unregForm);
     /*end*/
 })(jQuery);
