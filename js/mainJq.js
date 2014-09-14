@@ -154,10 +154,12 @@
             var fotoInPopupW = fotoPopup.width(),
                 fotoInPopupH = fotoPopup.height(),
                 clientW = document.body.clientWidth,
-                clientH = document.body.clientHeight;
+                clientH = document.body.clientHeight,
+                scrollTop = window.pageYOffset;
+            console.log(scrollTop);
 
             fotoPopup.css({
-                'marginTop': clientH/2 - fotoInPopupH/2 + 'px',
+                'marginTop': scrollTop + 100 + 'px',
                 'marginLeft': clientW/2 - fotoInPopupW / 2 + 'px'
             });
         });

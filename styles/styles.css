@@ -927,7 +927,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-footer {
-    padding: 25px 25px 20px;
+    padding: 25px 0 20px;
     background: #D8D8D8;
 }
     .footer {
@@ -1001,7 +1001,7 @@ a:hover                        { text-decoration:none; }
     background: rgba(0, 0, 0, 0.5);
 }
     #wrap-popup {
-        position: fixed;
+        position: absolute;
         float: left;
         background-color: #ffffff;
     }
