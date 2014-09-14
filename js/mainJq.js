@@ -151,6 +151,7 @@
                 bgPopup.removeClass('show_js');
                 $('.icon-close_js').remove();
                 showCurrentForm.removeClass('show_js');
+                $(showCurrentForm).find('.show_js').removeClass('show_js');
 
                 try {
                     subForm.removeClass('show_js');
