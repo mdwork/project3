@@ -417,6 +417,15 @@ a:hover                        { text-decoration:none; }
                         min-height: 55px;
                         vertical-align: middle;
                     }
+                    .box-category-auto img:last-child {
+                        display: none;
+                    }
+                    .box-category-auto:hover img:first-child {
+                        display: none;
+                    }
+                    .box-category-auto:hover img:last-child {
+                        display: inline-block;
+                    }
                     .box-category-auto2 {
                         width: 210px;
                         margin-right: 50px;
@@ -441,8 +450,8 @@ a:hover                        { text-decoration:none; }
                                 color: #12181d;
                                 font-size: 15px;
                             }
-                            a.link-category-auto:hover {
-                                color: red;
+                            .box-category-auto:hover .link-category-auto {
+                                color: #d7270d;
                             }
                     .header-city {
                         color: #5e5f60;
