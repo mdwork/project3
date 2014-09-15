@@ -1029,11 +1029,11 @@ a:hover                        { text-decoration:none; }
                 border-width: 2px;
                 font-size: 32px;
             }
-            a.active-page {
+            .active-page a {
                 color: #5e5f60;
                 border-color: #fff;
             }
-            a.active-page:hover {
+            .active-page:hover a {
                 color: #5e5f60;
             }
 

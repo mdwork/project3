@@ -105,6 +105,40 @@
     });
     /*end*/
 
+    /*toggle popup-regestration pages*/
+    $('#list-reg-link_js a').on('click', function(e) {
+        e.preventDefault();
+        var currentLink = $(e.target).text(),
+            li = $(e.target).parent(),
+            valueLi = $(e.target).parent().hasClass('active-page'),
+            allItemFilter = $('#list-reg-link_js li');
+
+
+        if (valueLi != 'active-page') {
+            for (var i = 0; i < allItemFilter.length; i++) {
+                $(allItemFilter[i]).removeAttr('class');
+            }
+
+
+            var regBox = $('#reg-form'),
+                autoregBox = $('#autoreg-form');
+
+            if (currentLink == 'Регистрация') {
+                $('#list-reg-link_js > li').removeAttr('class');
+                li.addClass('active-page');
+                regBox.addClass('show_js');
+                autoregBox.removeClass('show_js');
+            }
+            if (currentLink == 'Авторизация') {
+                $('#list-reg-link_js > li').removeAttr('class');
+                li.addClass('active-page');
+                autoregBox.addClass('show_js');
+                regBox.removeClass('show_js');
+            }
+        }
+    });
+    /*end*/
+
     /*valid email*/
     $('#submit-subscription_js').submit(function(e){
         var emailValid = $('#valid-email_js');
