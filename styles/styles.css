@@ -257,6 +257,13 @@ a:hover                        { text-decoration:none; }
                     max-width: 111px;
                     padding: 0 5px;
                 }
+                .select-box-search-form.bottom .little-select {
+                    max-width: 104px;
+                }
+                .select-box-search-form.bottom .little-input {
+                    max-width: 58px;
+                    margin-right: 4px;
+                }
         .box-price {
             overflow: hidden;
         }
@@ -1403,9 +1410,60 @@ a:hover                        { text-decoration:none; }
                         font-size: 20px;
                         color: #ffffff;
                     }
+                    
     #popup-advanced-search {
         display: none;
+        padding: 20px 29px;
     }
+        #popup-advanced-search header h2 {
+            margin-bottom: 16px;
+            line-height: 42px;
+            font-size: 32px;
+            font-weight: 500;
+            color: #5e5f60;
+        }
+        #popup-advanced-search .box-price {
+            margin-bottom: 16px;
+        }
+        .select-box-search-form.bottom {
+            margin-bottom: 20px;
+        }
+
+        .other-search-parameters {
+             margin-bottom: 64px;
+        }
+            .list-other-parameters {
+                position: relative;
+            }
+            .list-other-parameters:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 286px;
+                width: 0;
+                height: 289px;
+                border-right: 1px dotted #000000;
+            }
+                .list-other-parameters a {
+                    font-size: 17px;
+                    color: #d7270e;
+                }
+
+        #popup-advanced-search footer {
+            position: relative;
+            overflow: inherit;
+        }
+        #popup-advanced-search footer:before {
+            content: '';
+            position: absolute;
+            left: -29px;
+            top: -23px;
+            height: 2px;
+            width: 854px;
+            padding: 0;
+            margin: 0;
+            background: #fff;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -32,7 +32,6 @@
             <span class="add-ads">Подать объявление</span>
         </div><!--end HEADER-->
 
-
         <nav class="bg-nav">
             <ul class="nav">
                 <li>
@@ -1321,6 +1320,10 @@
             </div><!--end WRAP REG AUTOREG FORM-->
 
             <form id="popup-advanced-search" action="#" method="post" class="form-search-features">
+                <header>
+                    <h2>Расширенный поиск</h2>
+                </header>
+
                 <ul class="select-box-search-form">
                     <!--first column-->
                     <li>
@@ -1425,14 +1428,501 @@
                     </ul>
                 </div><!--end BOX PRICE-->
 
+                <ul class="select-box-search-form bottom">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Пробег</span>
+                        <div class="clearfix">
+                            <input type="text" class="custom-input little-input" placeholder="100000">
+                            <input type="text" class="custom-input little-input" placeholder="700000">
+                            <select class="custom-input custom-select-height little-select float-r">
+                                <option>Любой тип</option>
+                                <option>Любой тип</option>
+                            </select>
+                        </div>
+
+                        <span class="name-input">Количество дверей</span>
+                        <select class="custom-input custom-select-height">
+                            <option>5</option>
+                            <option>4</option>
+                            <option>2</option>
+                        </select>
+
+                        <span class="name-input">КПП</span>
+                        <select class="custom-input custom-select-height">
+                            <option>АКПП</option>
+                            <option>МКПП</option>
+                        </select>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Состояние</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Любое</option>
+                            <option>Битая</option>
+                            <option>Крашенная</option>
+                        </select>
+
+                        <span class="name-input">Цвет</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Любой</option>
+                            <option>Черный</option>
+                            <option>Белый</option>
+                        </select>
+
+                        <span class="name-input">Сортировать по</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Дате добавления</option>
+                            <option>Цене</option>
+                        </select>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Таможня</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Любая</option>
+                            <option>Любая</option>
+                        </select>
+
+                        <span class="name-input">Привод</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Полный</option>
+                            <option>Передний</option>
+                            <option>Задний</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <section class="other-search-parameters">
+                    <ul class="list-other-parameters">
+                        <li class="security active">
+                            <a href="#">Безопасность</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="additional-equipment">
+                            <a href="#">Дополнительное оборудование</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="hijack-protection">
+                            <a href="#">Защита от угона</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sound">
+                            <a href="#">Звук</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="comfort">
+                            <a href="#">Комфорт</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="multimedia">
+                            <a href="#">Мультимедиа</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="overview">
+                            <a href="#">Обзор</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="options">
+                            <a href="#">Опции</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="interior">
+                            <a href="#">Салон</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="communication">
+                            <a href="#">Связь</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="ecology">
+                            <a href="#">Экология</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ABS - антиблокировочная система</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для водителя</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag для пассажира</label>
+                                </li>
+                                <li>
+                                    <select class="select-other-parameters">
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                        <option>Airbag боковые</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>Airbag оконные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ESP - система стабилизации</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="check-other-parameters">
+                                    <label>ASR - антипробуксовочная система</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
                 <footer class="footer-section">
                     <span class="result-search">Найдено: <span class="number-ad">80</span> объявлений</span>
                     <input type="button" class="bt-show-red" value="Показать">
                     <input type="reset" class="bt-reset" value="Очистить">
-
-                    <a href="#" class="bt-toggle bt-advanced-search float-r">Расширенный поиск</a>
                 </footer>
-            </form>
+            </form><!--end POPUP ADVANCED SEARCH-->
         </div><!--end WRAP POPUP-->
     </div><!--end BG POPUP-->
 
