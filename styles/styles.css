@@ -1267,7 +1267,6 @@ li.third-advantage-placement {
     font-size: 30px;
 }
 #unregistered-box {
-    display: none !important;
     padding-bottom: 306px;
     background: url("../images/popup/unregistered-box_bg.png") no-repeat bottom center;
 }
