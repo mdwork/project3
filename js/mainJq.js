@@ -235,4 +235,15 @@
             e.preventDefault();
         });
     }
+    /*end*/
+
+    popupAutoreg.on('click', function(){
+        $('#link-reg').parent().addClass('active-page');
+        $('#link-autoreg').parent().removeClass('active-page');
+    });
+
+    popupRegestration.on('click', function(){
+        $('#link-reg').parent().removeClass('active-page');
+        $('#link-autoreg').parent().addClass('active-page');
+    });
 })(jQuery);
