@@ -1004,6 +1004,7 @@ a:hover                        { text-decoration:none; }
         position: absolute;
         float: left;
         background-color: #ffffff;
+        opacity: 0;
     }
     .icon-close_js:after {
         content: 'х';

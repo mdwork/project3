@@ -140,7 +140,7 @@
                 fotoPopup = $('#wrap-popup');
 
             bgPopup.addClass('show_js');
-            fotoPopup.prepend('<span class="icon-close_js"></span>');
+            fotoPopup.prepend('<span class="icon-close_js"></span>').animate({'opacity': 1}, 500);
             showCurrentForm.addClass('show_js');
             try {
                 subForm.addClass('show_js');
@@ -152,6 +152,7 @@
                 $('.icon-close_js').remove();
                 showCurrentForm.removeClass('show_js');
                 $(showCurrentForm).find('.show_js').removeClass('show_js');
+                fotoPopup.css('opacity', 0);
 
                 try {
                     subForm.removeClass('show_js');
