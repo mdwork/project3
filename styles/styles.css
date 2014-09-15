@@ -42,14 +42,16 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .wrapper {
     overflow: hidden;
-    width: 1080px;
+    width: 100%;
+    max-width: 1080px;
     margin: 25px auto 35px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
     .header {
-        width: 1080px;
+        width: 100%;
+        max-width: 1080px;
         margin: 15px auto;
     }
         .main-logo {
@@ -58,8 +60,11 @@ a:hover                        { text-decoration:none; }
         .main-logo,
         .main-logo img {
             overflow: hidden;
-            width: 373px;
-            height: 76px;
+            width: 100%;
+            max-width: 373px;
+            height: 100%;
+            max-height: 76px;
+            text-indent: -9999px;
         }
             .main-logo a,
             .main-logo img {
@@ -177,8 +182,8 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .content {
     float: left;
-    width: 830px;
-    margin-right: 10px;
+    width: 76.853%;;
+    margin-right: 0.927%;
 }
     .wrap-form-search-features {
         overflow: hidden;
@@ -461,7 +466,8 @@ a:hover                        { text-decoration:none; }
 
         .empty-box {
             position: relative;
-            width: 728px;
+            max-width: 728px;
+            width: 95%;
             height: 90px;
             margin: 0 auto 25px;
             background: #fff;
@@ -657,7 +663,7 @@ a:hover                        { text-decoration:none; }
                     .sub-article-news > li {
                         float: left;
                         width: 263px;
-                        margin-right: 10px;
+                        margin: 0 10px 25px 0;
                     }
                     .sub-article-news > li:nth-child(3n) {
                         margin: 0 0 25px 0;
@@ -754,13 +760,14 @@ a:hover                        { text-decoration:none; }
     }
         .list-benefits {
             overflow: hidden;
-            width: 670px;
+            max-width: 670px;
+            width: 100%;
             margin: 30px auto 0;
         }
             .list-benefits > li {
                 float: left;
-                width: 190px;
-                padding: 0 15px;
+                width: 30%;
+                padding: 1.5%;
                 text-align: center;
             }
                 .icon-benefits {
@@ -782,7 +789,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .side-bar {
     float: left;
-    width: 240px;
+    width: 22.22%;
 }
     .banner-aside {
         position: relative;
@@ -840,6 +847,7 @@ a:hover                        { text-decoration:none; }
     }
 
     .box-special-placement {
+        overflow: hidden;
         margin: 10px 0;
         padding: 10px 8px 0;
         border: 1px solid #E4E4E4;
@@ -863,6 +871,7 @@ a:hover                        { text-decoration:none; }
                 border: none;
             }
             .ad-sidebar {
+                max-width: 222px;
                 margin-bottom: 25px;
                 text-align: left;
             }
@@ -1354,6 +1363,101 @@ li.third-advantage-placement {
     border: none;
     font-size: 20px;
     color: #ffffff;
+}
+/*----------------------------------------------------------------------------------*/
+/*-----------------------------------RESPONSIVE-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 768px) {
+    .content,
+    .side-bar {
+        float: none;
+        width: auto;
+    }
+    .empty-box {
+        height: 75px;
+    }
+    .ad-sidebar {
+        float: left;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .main-logo {
+        float: none;
+    }
+    .wrap-registration {
+        float: none;
+        margin-left: 10px;
+    }
+    .add-ads {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 585px) {
+    .select-box-search-form li {
+        float: none;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 560px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 450px) {
+    .wrap-scale-price:after {
+        max-width: 255px;
+    }
+    .active-value {
+        width: 50px;
+    }
+    .result-search {
+        display: block;
+        margin-bottom: 10px;
+    }
+    a.bt-advanced-search {
+        margin: 15px 0 10px;
+    }
+    .header-benefits {
+        font-size: 16px;
+    }
+    .list-benefits p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header-second {
+        padding-left: 5px;
+        text-transform: none;
+    }
+    .toggle-search-form {
+        right: 5px;
+    }
+    a.bt-toggle {
+        font-size: 14px;
+    }
+    .horizontal-list-select li:last-child {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .header-second {
+        font-size: 18px;
+    }
+    .toggle-search-form {
+        background: none !important;
+    }
+    .empty-box {
+        height: 60px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
