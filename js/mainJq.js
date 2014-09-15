@@ -17,7 +17,7 @@
     toggleButtonLink.on('click', function(e){
         e.preventDefault();
         toggleElementForm.slideToggle('slow');
-        
+
         if(toggleButtonLink.text() == 'Свернуть поиск') {
             toggleButtonLink.text('Развернуть поиск');
             toggleButton.css('backgroundImage','url(images/content/icon-triangle-disable.png)');
@@ -224,7 +224,7 @@
         unregForm = $('#unregistered-box');
     popupWindow(popupTooltip, formTooltip, unregForm);
 
-    var popupAdvancedSearch = $('#lind-advanced-search'),
+    var popupAdvancedSearch = $('#link-advanced-search'),
         formAdvancedSearch = $('#popup-advanced-search');
     popupWindow(popupAdvancedSearch, formAdvancedSearch);
     /*end*/
