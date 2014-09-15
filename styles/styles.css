@@ -1052,9 +1052,13 @@ a:hover                        { text-decoration:none; }
     }
         .wrap-reg-autoreg-form {
             display: none;
-            width: 370px;
+            max-width: 370px;
+            width: 100%;
             padding: 30px 35px 40px;
         }
+            #list-reg-link_js li {
+                display: inline-block;
+            }
             a.bt-reg {
                 border-width: 2px;
                 font-size: 32px;
@@ -1153,6 +1157,9 @@ a:hover                        { text-decoration:none; }
                     .list-soc-link li:hover {
                         opacity: 0.8;
                     }
+                        .list-soc-link li a {
+
+                        }
                         .list-soc-link a {
                             display: block;
                             height: 37px;
@@ -1182,7 +1189,8 @@ a:hover                        { text-decoration:none; }
 
         #popup-reg {
             display: none;
-            width: 834px;
+            max-width: 834px;
+            width: 100%;
             padding: 11px 9px;
         }
             .sell-car {
@@ -1204,55 +1212,52 @@ a:hover                        { text-decoration:none; }
             }
             .list-advantage-placement:after {
                 content: "";
-                position: absolute;
-                top: 82px;
-                left: 386px;
+                position: relative;
+                top: 70px;
+                display: block;
                 height: 94px;
                 width: 41px;
+                margin: 0 auto;
                 background: url("../images/popup/arrow_popup_bg.png") 0 0;
             }
                 .list-advantage-placement li {
                     position: relative;
                     float: left;
-                    padding-left: 93px;
                     padding-top: 5px;
+                    margin-left: 4%;
                     line-height: 20px;
                     font-size: 16px;
                     color: #686868;
                 }
+                .list-advantage-placement li:before {
+                    margin-right: 10px;
+                }
                 .first-advantage-placement {
-                    width: 158px;
+                    width: 27.5%;
                 }
                 .first-advantage-placement:before {
                     content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 27px;
+                    float: left;
                     width: 54px;
                     height: 54px;
                     background: url("../images/popup/advantage-placement-sprite.png") 0 -2px;
                 }
                 .second-advantage-placement {
-                    width: 180px;
+                    width: 28.7%;
                 }
                 .second-advantage-placement:before {
                     content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 27px;
+                    float: left;
                     width: 56px;
                     height: 56px;
                     background: url("../images/popup/advantage-placement-sprite.png") -251px 0;
                 }
                 li.third-advantage-placement {
-                    width: 217px;
-                    padding-left: 75px;
+                    width: 31.8%;
                 }
                 .third-advantage-placement:before {
                     content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 27px;
+                    float: left;
                     width: 37px;
                     height: 52px;
                     background: url("../images/popup/advantage-placement-sprite.png") 37px -2px;
@@ -1326,6 +1331,7 @@ a:hover                        { text-decoration:none; }
             #unregistered-box {
                 padding-bottom: 306px;
                 background: url("../images/popup/unregistered-box_bg.png") no-repeat bottom center;
+                background-size: 100%;
             }
             #registered-box {
                 padding: 46px 20px 9px 20px;
@@ -1508,6 +1514,14 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1084px) {
+    .select-box-search-form li:last-child {
+        margin-left: 0;
+    }
+    .bt-price-subscription {
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .list-advantage {
         float: none;
@@ -1521,11 +1535,16 @@ a:hover                        { text-decoration:none; }
     .bt-show-red {
         font-size: 15px;
     }
-    .bt-price-subscription {
-        margin-bottom: 10px;
+}
+@media screen and (max-width: 855px) {
+    .icon-close_js:after {
+        right: 0;
+        top: -34px;
+    }
+    #unregistered-box {
+        background-size: 95%;
     }
 }
-
 @media screen and (max-width: 768px) {
     .content,
     .side-bar {
@@ -1551,6 +1570,12 @@ a:hover                        { text-decoration:none; }
     }
     .main-article-news {
         margin-bottom: 25px;
+    }
+    .terms-service {
+        margin-top: 0;
+    }
+    .list-placement li:last-child {
+        float: none;
     }
 }
 @media screen and (max-width: 680px) {
@@ -1580,6 +1605,11 @@ a:hover                        { text-decoration:none; }
     }
     .list-stars {
         text-align: left;
+    }
+    .list-values {
+        position: relative;
+        top: 0;
+        left: 0;
     }
 }
 @media screen and (max-width: 590px) {
@@ -1623,6 +1653,29 @@ a:hover                        { text-decoration:none; }
     .list-advantage li {
         float: none;
         margin: 0 0 10px 0;
+    }
+    .list-advantage-placement li:before {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .list-advantage-placement:after {
+        top: 150px;
+    }
+    .sell-car {
+        font-size: 16px;
+    }
+    #popup-reg header h3 {
+        font-size: 15px;
+    }
+    #popup-reg {
+        padding: 0;
+    }
+    .our-help-1 {
+        float: none;
+    }
+    .list-advantage-placement {
+        margin-bottom: 200px;
     }
 }
 @media screen and (max-width: 460px) {
@@ -1739,6 +1792,39 @@ a:hover                        { text-decoration:none; }
     .list-autoservice-auto a {
         font-size: 12px;
     }
+    .our-help-1 {
+        margin-left: 5px;
+        font-size: 17px;
+    }
+    .reg-block-2:after {
+        left: 45%;
+    }
+    .reg-block-2 {
+        font-size: 16px;
+        padding: 0 40px 0 127px;
+    }
+    .reg-block-2:before {
+        left: 2px;
+    }
+    .our-help-2 {
+        width: auto;
+        font-size: 12px;
+    }
+    .list-advantage-placement {
+        margin-bottom: 220px;
+    }
+    .unreg-tooltip {
+        margin-left: 0
+    }
+    #unregistered-box {
+        padding-bottom: 150px;
+    }
+    a.bt-toggle {
+        font-size: 14px;
+    }
+    .list-reg-inputs {
+        width: 280px;
+    }
 }
 @media screen and (max-width: 430px) {
     .header-second {
@@ -1747,9 +1833,6 @@ a:hover                        { text-decoration:none; }
     }
     .toggle-search-form {
         right: 5px;
-    }
-    a.bt-toggle {
-        font-size: 14px;
     }
     .horizontal-list-select li:last-child {
         margin-left: 0;
@@ -1766,6 +1849,31 @@ a:hover                        { text-decoration:none; }
         width: 75px;
         margin-right: 25px;
     }
+    .wrap-reg-autoreg-form {
+        width: 95%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .list-reg-inputs input {
+        width: 220px;
+    }
+    .list-soc-link li {
+        margin-left: 15px;
+    }
+    #list-reg-link_js li {
+        margin-left: 12%;
+    }
+}
+@media screen and (max-width: 380px) {
+    #registered-box {
+        padding-left: 5px;
+    }
+    .total-payment span {
+        display: block;
+    }
+    .total-payment input[type="submit"] {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 350px) {
     .header-second {
@@ -1780,6 +1888,14 @@ a:hover                        { text-decoration:none; }
     .nav-footer li {
         float: none;
         margin-left: 0;
+    }
+    .list-advantage-placement:after {
+        top: 170px;
+    }
+    .list-placement li:first-child img {
+        float: none;
+        display: block;
+        margin-top: 5px;
     }
 
 }
