@@ -215,6 +215,11 @@
         subForm = $('#reg-form');
     popupWindow(popupRegestration, formReg, subForm);
 
+    var popupAutoreg = $('#popup-autoreg'),
+        formAuto = $('.wrap-reg-autoreg-form'),
+        subFormAutoreg = $('#autoreg-form');
+    popupWindow(popupAutoreg, formAuto, subFormAutoreg);
+    
     var popupTooltip = $('#popup-tooltip_js'),
         formTooltip = $('#popup-reg'),
         unregForm = $('#unregistered-box');
