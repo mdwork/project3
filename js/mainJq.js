@@ -216,13 +216,19 @@
     popupWindow(popupRegestration, formReg, subForm);
 
     var popupAutoreg = $('#popup-autoreg'),
-        formAuto = $('.wrap-reg-autoreg-form'),
         subFormAutoreg = $('#autoreg-form');
-    popupWindow(popupAutoreg, formAuto, subFormAutoreg);
+    popupWindow(popupAutoreg, formReg, subFormAutoreg);
 
     var popupTooltip = $('#popup-tooltip_js'),
         formTooltip = $('#popup-reg'),
         unregForm = $('#unregistered-box');
     popupWindow(popupTooltip, formTooltip, unregForm);
     /*end*/
+
+    /*responsive*/
+    if(document.body.clientWidth < 769) {
+        $('.list-autoservice tr, .list-autoservice td').onload(function(e){
+            e.preventDefault();
+        });
+    }
 })(jQuery);
