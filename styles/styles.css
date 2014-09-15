@@ -1003,7 +1003,7 @@ a:hover                        { text-decoration:none; }
     #wrap-popup {
         position: absolute;
         float: left;
-        background-color: #ffffff;
+        background-color: #F7F7F7;
         opacity: 0;
     }
     .icon-close_js:after {
@@ -1162,6 +1162,7 @@ a:hover                        { text-decoration:none; }
     position: relative;
     float: left;
     padding-left: 93px;
+    padding-top: 5px;
     line-height: 20px;
     font-size: 16px;
     color: #686868;
@@ -1266,9 +1267,94 @@ li.third-advantage-placement {
     font-size: 30px;
 }
 #unregistered-box {
-    display: none;
+    display: none !important;
     padding-bottom: 306px;
     background: url("../images/popup/unregistered-box_bg.png") no-repeat bottom center;
+}
+#registered-box {
+    padding: 46px 20px 9px 20px;
+}
+.reg-tooltip {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 22px;
+    color: #2e3439;
+}
+.list-placement {
+    overflow: hidden;
+}
+.list-placement li {
+    float: left;
+    width: 330px;
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+.list-placement li:last-child {
+    float: right;
+    margin-right: 89px;
+}
+.list-placement li:first-child img {
+    float: right;
+    width: 60px;
+    height: 24px;
+}
+.name-select-placement {
+    line-height: 26px;
+    font-size: 15px;
+    color: #5e5f60;
+}
+.select-placement {
+    width: 258px;
+    height: 24px;
+    padding: 0 5px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: 1px solid #BFBFBF;
+    color: #b5b5b5;
+}
+.terms-service {
+    display: block;
+    margin-top: -48px;
+    margin-bottom: 77px;
+}
+#check-terms-service {
+    width: 26px;
+    height: 24px;
+    margin-right: 5px;
+}
+.terms-service a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #d7270e;
+}
+.terms-service a:hover {
+    text-decoration: none;
+}
+.total-payment {
+    position: relative;
+}
+.total-payment:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -29px;
+    width: 852px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.total-payment span {
+    margin-right: 12px;
+    font-size: 17px;
+    color: #363b3d;
+}
+.total-payment input[type="submit"] {
+    width: 125px;
+    height: 38px;
+    margin-top: -8px;
+    background-color: #D7270D;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
