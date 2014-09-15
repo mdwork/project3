@@ -32,8 +32,8 @@
             <span class="add-ads">Подать объявление</span>
         </div><!--end HEADER-->
 
-        <nav class="bg-nav">
-            <ul class="nav">
+        <nav id="nav-wrap" class="bg-nav">
+            <ul id="nav" class="nav">
                 <li>
                     <a href="#">Продажа авто</a>
                 </li>
@@ -753,25 +753,30 @@
                             <li>
                                 <img class="foto-autoservices" src="images/content/foto-autoservices.jpg" alt="Foto"/>
 
-                                <div class="clearfix float-l">
-                                    <div class="box-address">
-                                        <header>БелАвтоСервис</header>
+                                <div class="box-address">
+                                    <div class="">
+                                        <div class="over-hide">
+                                            <header class="float-l">БелАвтоСервис</header>
+
+                                            <div class="box-review">
+                                                <ul class="list-stars">
+                                                    <li class="full-star">1</li>
+                                                    <li class="full-star">2</li>
+                                                    <li class="half-star">3</li>
+                                                    <li class="empty-star">4</li>
+                                                    <li class="empty-star">5</li>
+                                                </ul>
+                                                <span>Средняя оценка <span class="average">4.5</span>,
+                                                    Отзывов <a href="#">15</a>
+                                                </span>
+                                            </div><!--end BOX-REVIEW-->
+                                        </div>
+
                                         <span class="address-autoservice">Минск, ул. Куприянова, 4</span>
                                         <a href="#" class="bt-toggle bt-advanced-search">На карте</a>
                                     </div><!--end BOX ADDRESS-->
 
-                                    <div class="box-review">
-                                        <ul class="list-stars">
-                                            <li class="full-star">1</li>
-                                            <li class="full-star">2</li>
-                                            <li class="half-star">3</li>
-                                            <li class="empty-star">4</li>
-                                            <li class="empty-star">5</li>
-                                        </ul>
-                                        <span>Средняя оценка <span class="average">4.5</span>,
-                                            Отзывов <a href="#">15</a>
-                                        </span>
-                                    </div><!--end BOX-REVIEW-->
+
                                 </div><!--end CLEARFIX-->
 
                                 <span class="tel-autoservice">+375 29 3216548, +375 29 3216548</span>
@@ -1928,5 +1933,22 @@
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/mainJq.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+
+            /* prepend menu icon */
+            $('#nav-wrap').prepend('<div id="menu-icon"></div>');
+
+            /* toggle nav */
+            $("#menu-icon").on("click", function(){
+                $("#nav").slideToggle();
+                $(this).toggleClass("active");
+            });
+
+        });
+    </script>
 </body>
 </html>
