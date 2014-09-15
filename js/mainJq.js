@@ -14,18 +14,18 @@
         toggleButtonLink = $('#bt-toggle'),
         toggleElementForm = $('.form-search-features');
 
-    toggleButton.on('click', function(e){
+    toggleButtonLink.on('click', function(e){
         e.preventDefault();
-        toggleElementForm.slideToggle('slow', function(){
-            if(toggleButton.text() == 'Свернуть поиск') {
-                toggleButtonLink.text('Развернуть поиск');
-                toggleButton.css('backgroundImage','url(images/content/icon-triangle-disable.png)');
-            }
-            else {
-                toggleButtonLink.text('Свернуть поиск');
-                toggleButton.css('backgroundImage','url(images/content/icon-triangle-active.png)');
-            }
-        });
+        toggleElementForm.slideToggle('slow');
+        
+        if(toggleButtonLink.text() == 'Свернуть поиск') {
+            toggleButtonLink.text('Развернуть поиск');
+            toggleButton.css('backgroundImage','url(images/content/icon-triangle-disable.png)');
+        }
+        else {
+            toggleButtonLink.text('Свернуть поиск');
+            toggleButton.css('backgroundImage','url(images/content/icon-triangle-active.png)');
+        }
     });
     /*end*/
 
@@ -147,7 +147,7 @@
             $('#bt-subscription_js').css('backgroundColor','#ccc');
             emailValid.addClass('no-valid-email_js');
 
-            emailValid.blur(function(e){
+            emailValid.blur(function(){
                 if(emailValid.val() != '' && emailValid != ' ') {
                     $('#bt-subscription_js').css('backgroundColor','#D7270D');
                     emailValid.removeClass('no-valid-email_js');
@@ -231,7 +231,7 @@
 
     /*responsive*/
     if(document.body.clientWidth < 769) {
-        $('.list-autoservice tr, .list-autoservice td').onload(function(e){
+        $('.list-autoservice tr, .list-autoservice td').load(function(e){
             e.preventDefault();
         });
     }
