@@ -208,7 +208,7 @@
                         <input type="button" class="bt-show-red" value="Показать">
                         <input type="reset" class="bt-reset" value="Очистить">
 
-                        <a href="#" class="bt-toggle bt-advanced-search float-r">Расширенный поиск</a>
+                        <a href="#" id="lind-advanced-search" class="bt-toggle bt-advanced-search float-r">Расширенный поиск</a>
                     </footer>
                 </form>
             </section><!--end WRAP FORM SEARCH FEATURES-->
@@ -1317,6 +1317,120 @@
                     <input class="bt-show-red no-margin" type="submit" value="Войти">
                 </form><!--end AUTOREG FORM-->
             </div><!--end WRAP REG AUTOREG FORM-->
+
+            <form id="popup-advanced-search" action="#" method="post" class="form-search-features">
+                <ul class="select-box-search-form">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Марка</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Audi</option>
+                            <option>Ford</option>
+                        </select>
+
+                        <span class="name-input">Модель</span>
+                        <select class="custom-input custom-select-height">
+                            <option>GL550</option>
+                            <option>GL550</option>
+                        </select>
+
+                        <span class="name-input">Год выпуска</span>
+                        <div class="clearfix">
+                            <select class="custom-input custom-select-height little-select float-l">
+                                <option>2013</option>
+                                <option>2014</option>
+                            </select>
+                            <select class="custom-input custom-select-height little-select float-r">
+                                <option>2013</option>
+                                <option>2014</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Кузов</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Внедородник</option>
+                            <option>Внедородник</option>
+                        </select>
+
+                        <span class="name-input">Тип двигателя</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Бензин</option>
+                            <option>Бензин</option>
+                        </select>
+
+                        <span class="name-input">Объем двигателя</span>
+                        <div class="clearfix">
+                            <select class="custom-input custom-select-height little-select float-l">
+                                <option>4,5л</option>
+                                <option>7,0л</option>
+                            </select>
+                            <select class="custom-input custom-select-height little-select float-r">
+                                <option>7,0л</option>
+                                <option>7,0л</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Период</span>
+                        <select class="custom-input custom-select-height">
+                            <option>1 месяц</option>
+                            <option>1 месяц</option>
+                        </select>
+
+                        <span class="name-input">Город</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Минск</option>
+                            <option>Минск</option>
+                        </select>
+
+                        <span class="name-input">Фото</span>
+                        <select class="custom-input custom-select-height">
+                            <option>Необязательно</option>
+                            <option>Необязательно</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <div class="box-price">
+                    <div class="wrap-scale-price">
+                        <span class="name-input">Цена</span>
+                        <span class="active-value"></span>
+                    </div>
+
+                    <ul class="horizontal-list-select">
+                        <li>
+                            <span class="name-input">От</span>
+                            <input type="text" class="custom-input little-input">
+                        </li>
+
+                        <li>
+                            <span class="name-input">До</span>
+                            <input type="text" class="custom-input little-input">
+                        </li>
+
+                        <li>
+                            <span class="name-input">Валюта</span>
+                            <select class="custom-input custom-select-height little-select">
+                                <option>Доллар</option>
+                                <option>Евро</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div><!--end BOX PRICE-->
+
+                <footer class="footer-section">
+                    <span class="result-search">Найдено: <span class="number-ad">80</span> объявлений</span>
+                    <input type="button" class="bt-show-red" value="Показать">
+                    <input type="reset" class="bt-reset" value="Очистить">
+
+                    <a href="#" class="bt-toggle bt-advanced-search float-r">Расширенный поиск</a>
+                </footer>
+            </form>
         </div><!--end WRAP POPUP-->
     </div><!--end BG POPUP-->
 

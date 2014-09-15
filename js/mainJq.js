@@ -223,6 +223,10 @@
         formTooltip = $('#popup-reg'),
         unregForm = $('#unregistered-box');
     popupWindow(popupTooltip, formTooltip, unregForm);
+
+    var popupAdvancedSearch = $('#lind-advanced-search'),
+        formAdvancedSearch = $('#popup-advanced-search');
+    popupWindow(popupAdvancedSearch, formAdvancedSearch);
     /*end*/
 
     /*responsive*/
