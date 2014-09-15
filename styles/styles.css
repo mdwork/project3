@@ -1414,6 +1414,7 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 10px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .content,
     .side-bar {
