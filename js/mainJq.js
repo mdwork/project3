@@ -123,13 +123,13 @@
             var regBox = $('#reg-form'),
                 autoregBox = $('#autoreg-form');
 
-            if (currentLink == 'Регистрация') {
+            if (currentLink == 'Авторизация') {
                 $('#list-reg-link_js > li').removeAttr('class');
                 li.addClass('active-page');
                 regBox.addClass('show_js');
                 autoregBox.removeClass('show_js');
             }
-            if (currentLink == 'Авторизация') {
+            if (currentLink == 'Регистрация') {
                 $('#list-reg-link_js > li').removeAttr('class');
                 li.addClass('active-page');
                 autoregBox.addClass('show_js');
