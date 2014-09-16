@@ -1930,7 +1930,8 @@ a:hover                        { text-decoration:none; }
 .sliderCont {
     width: 96%;
     margin-left: 2%;
-    height: 27px;
+    height: 14px;
+    margin-top: 9px;
 }
 
 /* POLZUNOK */

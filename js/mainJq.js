@@ -212,11 +212,11 @@
     /*popup call*/
     var popupRegestration = $('#popup-registration'),
         formReg = $('.wrap-reg-autoreg-form'),
-        subForm = $('#autoreg-form');
+        subForm = $('#reg-form');
     popupWindow(popupRegestration, formReg, subForm);
 
     var popupAutoreg = $('#popup-autoreg'),
-        subFormAutoreg = $('#reg-form');
+        subFormAutoreg = $('#autoreg-form');
     popupWindow(popupAutoreg, formReg, subFormAutoreg);
 
     var popupTooltip = $('#popup-tooltip_js'),
