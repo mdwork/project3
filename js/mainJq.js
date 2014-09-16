@@ -126,14 +126,14 @@
             if (currentLink == 'Авторизация') {
                 $('#list-reg-link_js > li').removeAttr('class');
                 li.addClass('active-page');
-                regBox.addClass('show_js');
-                autoregBox.removeClass('show_js');
+                regBox.removeClass('show_js');
+                autoregBox.addClass('show_js');
             }
             if (currentLink == 'Регистрация') {
                 $('#list-reg-link_js > li').removeAttr('class');
                 li.addClass('active-page');
-                autoregBox.addClass('show_js');
-                regBox.removeClass('show_js');
+                autoregBox.removeClass('show_js');
+                regBox.addClass('show_js');
             }
         }
     });
