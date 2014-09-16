@@ -246,4 +246,18 @@
         $('#link-reg').parent().removeClass('active-page');
         $('#link-autoreg').parent().addClass('active-page');
     });
+
+    var menuDynamik = $('.list-other-parameters > li > a');
+    menuDynamik.on('click', function(e){
+        e.preventDefault();
+
+        menuDynamik.parent().each(function(){
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            }
+        });
+
+        $(e.target).parent().addClass('active');
+    });
+
 })(jQuery);

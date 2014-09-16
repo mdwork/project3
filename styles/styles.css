@@ -1425,6 +1425,9 @@ a:hover                        { text-decoration:none; }
                     color: #44484a;
                     cursor: default;
                 }
+                .active .list-values {
+                    display: block;
+                }
                 .list-values {
                     display: none;
                     position: absolute;
