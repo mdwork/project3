@@ -37,7 +37,7 @@ jQuery("input#maxCost").change(function(){
 	var value1=jQuery("input#minCost").val();
 	var value2=jQuery("input#maxCost").val();
 	
-	if (value2 > 1000) { value2 = 1000; jQuery("input#maxCost").val(1000)}
+	if (value2 > 200000) { value2 = 200000; jQuery("input#maxCost").val(200000)}
 
 	if(parseInt(value1) > parseInt(value2)){
 		value2 = value1;
