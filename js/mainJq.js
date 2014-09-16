@@ -212,11 +212,11 @@
     /*popup call*/
     var popupRegestration = $('#popup-registration'),
         formReg = $('.wrap-reg-autoreg-form'),
-        subForm = $('#reg-form');
+        subForm = $('#autoreg-form');
     popupWindow(popupRegestration, formReg, subForm);
 
     var popupAutoreg = $('#popup-autoreg'),
-        subFormAutoreg = $('#autoreg-form');
+        subFormAutoreg = $('#reg-form');
     popupWindow(popupAutoreg, formReg, subFormAutoreg);
 
     var popupTooltip = $('#popup-tooltip_js'),
@@ -238,13 +238,13 @@
     /*end*/
 
     popupAutoreg.on('click', function(){
-        $('#link-reg').parent().addClass('active-page');
-        $('#link-autoreg').parent().removeClass('active-page');
+        $('#link-reg').parent().removeClass('active-page');
+        $('#link-autoreg').parent().addClass('active-page');
     });
 
     popupRegestration.on('click', function(){
-        $('#link-reg').parent().removeClass('active-page');
-        $('#link-autoreg').parent().addClass('active-page');
+        $('#link-reg').parent().addClass('active-page');
+        $('#link-autoreg').parent().removeClass('active-page');
     });
 
     var menuDynamik = $('.list-other-parameters > li > a');
