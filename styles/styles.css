@@ -764,7 +764,7 @@ a:hover                        { text-decoration:none; }
     .banner-aside {
         position: relative;
         border: 1px solid #BFBFBF;
-        width: 238px;
+        max-width: 238px;
         height: 398px;
         margin: 0 auto 10px;
     }
@@ -905,7 +905,7 @@ a:hover                        { text-decoration:none; }
             }
             .right-column-fuel-prices {
                 display: block;
-                margin-left: 150px;
+                margin-left: 78%;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
@@ -1377,6 +1377,7 @@ a:hover                        { text-decoration:none; }
                     }
                     
     #popup-advanced-search {
+        overflow: hidden;
         display: none;
         padding: 20px 29px;
     }
@@ -1495,14 +1496,27 @@ a:hover                        { text-decoration:none; }
     .bt-show-red {
         font-size: 15px;
     }
-}
-@media screen and (max-width: 855px) {
     .icon-close_js:after {
         right: 0;
         top: -34px;
     }
+    .box-fuel-prices li:first-child {
+        padding-left: 0;
+    }
+    .left-column-fuel-prices,
+    .right-column-fuel-prices {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 855px) {
     #unregistered-box {
         background-size: 95%;
+    }
+    #popup-reg {
+        padding: 0;
+    }
+    .header-second {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1536,6 +1550,10 @@ a:hover                        { text-decoration:none; }
     }
     .list-placement li:last-child {
         float: none;
+    }
+    .foto-main-article-autosport {
+        float: none;
+        display: block;
     }
 }
 @media screen and (max-width: 680px) {
@@ -1928,8 +1946,9 @@ a:hover                        { text-decoration:none; }
 }
 
 .sliderCont {
-    width: 96%;
+    width: 93%;
     margin-left: 2%;
+    margin-right: 2%;
     height: 14px;
     margin-top: 9px;
 }
