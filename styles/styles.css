@@ -1965,7 +1965,7 @@ a:hover                        { text-decoration:none; }
     height: 3px;
 }
 .ui-slider-horizontal .ui-slider-handle {
-    top: -5px;
+    top: -7px;
     margin-left: -6px;
 }
 .ui-slider-horizontal .ui-slider-range {
