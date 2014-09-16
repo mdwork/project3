@@ -279,49 +279,6 @@ a:hover                        { text-decoration:none; }
             width: 100%;
             margin-right: 12px;
         }
-            .wrap-scale-price:after {
-                content: '';
-                position: absolute;
-                bottom: 7px;
-                display: block;
-                width: 100%;
-                max-width: 390px;
-                height: 4px;
-                background: #fff;
-                border: 1px solid #BFBFBF;
-            }
-            .active-value {
-                position: relative;
-                z-index: 10;
-                display: block;
-                width: 125px;
-                height: 6px;
-                margin: 18px 0 0 50px;
-                background: #BFBFBF;
-            }
-                .active-value:before,
-                .active-value:after {
-                    content: '';
-                    display: inline-block;
-                    width: 15px;
-                    height: 15px;
-                    margin-top: -8px;
-                    background: #D7270D;
-                    border:3px solid #fff;
-                    -webkit-border-radius: 15px;
-                    -moz-border-radius: 15px;
-                    border-radius: 15px;
-                }
-                .active-value:before {
-                    float: left;
-                    margin-left: -15px;
-                }
-                .active-value:after {
-                    float: right;
-                    margin-right: -15px;
-                }
-        .horizontal-list-select {
-        }
             .horizontal-list-select li {
                 float: left;
                 max-width: 123px;
@@ -1931,4 +1888,99 @@ a:hover                        { text-decoration:none; }
 }
 .over-hide {
     overflow: hidden;
+}
+
+
+.formPolzunok {
+    width: 250px;
+    position: relative;
+    margin: 20px;
+
+}
+
+.formCost {
+    float: left;
+    margin-bottom: 10px;
+}
+.formCost label {
+    float: left;
+    font-size: 12px;
+    color: #E40000;
+    font-weight: bold;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.formCost input {
+    float: left;
+    text-align: right;
+    color: #434343;
+    font-size: 12px;
+    font-weight: bold;
+    width: 55px;
+    height: 17px;
+    background: none;
+    border: 1px solid #E5E5E5;
+    margin-right: 10px;
+}
+
+.sliderCont {
+    width: 96%;
+    margin-left: 2%;
+    height: 27px;
+}
+
+/* POLZUNOK */
+#slider {
+    width: 100%;
+}
+
+.ui-slider {
+    position: relative;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    height: 13px;
+    background: #D7270D;
+    border: 3px solid #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+.ui-slider-horizontal {
+    height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 6px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+.ui-widget-content {
+    height: 4px;
+    border: 1px solid #BFBFBF;
+    background: #fff;
+}
+.ui-widget-header {
+    border: 1px solid #D4D4D4;
+    background: #BFBFBF;
 }

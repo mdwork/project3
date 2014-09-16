@@ -181,18 +181,21 @@
                     <div class="box-price">
                         <div class="wrap-scale-price">
                             <span class="name-input">Цена</span>
-                            <span class="active-value"></span>
+
+                            <div class="sliderCont">
+                                <div id="slider"></div>
+                            </div>
                         </div>
 
                         <ul class="horizontal-list-select">
                             <li>
                                 <span class="name-input">От</span>
-                                <input type="text" class="custom-input little-input">
+                                <input id="minCost" type="text" class="custom-input little-input" value="100">
                             </li>
 
                             <li>
                                 <span class="name-input">До</span>
-                                <input type="text" class="custom-input little-input">
+                                <input id="maxCost" value="200000" type="text" class="custom-input little-input">
                             </li>
 
                             <li>
@@ -567,6 +570,7 @@
                         </ul>
                     </li>
 
+
                     <li>
                         <ul class="list-auto-type">
                             <li class="box-category-auto2">
@@ -578,6 +582,7 @@
                                     <a href="#" class="link-category-auto">Минивэны</a>
                                 </span>
                             </li>
+
 
                             <li class="box-category-auto2">
                                 <span class="wrap-foto-auto2">
@@ -1934,5 +1939,8 @@
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/mainJq.js"></script>
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script src="js/jquery.main.js"></script>
 </body>
 </html>
