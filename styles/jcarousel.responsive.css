@@ -116,15 +116,10 @@ a.jcarousel-control-next {
     }
     .sub-article-news article {
         padding-left: 15px;
+        padding-right: 15px;
     }
     a.jcarousel-control-prev,
     a.jcarousel-control-next {
         top: 75px;
-    }
-    a.jcarousel-control-next {
-        right: 1px;
-    }
-    a.jcarousel-control-prev {
-        left: 15px;
     }
 }
