@@ -640,8 +640,9 @@ a:hover                        { text-decoration:none; }
                     }
                         .foto-article-news {
                             display: block;
-                            width: 264px;
-                            height: 180px;
+                            max-width: 264px;
+                            width: 100%;
+                            max-height: 180px;
                             margin-bottom: 15px;
                         }
                         .main-article-news header {

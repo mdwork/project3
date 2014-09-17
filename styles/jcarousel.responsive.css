@@ -1,15 +1,10 @@
 .slider-wrap {
     max-width: 810px;
-    padding: 20px 0;
     margin: 0 auto;
 }
 
 .jcarousel-wrapper {
-    margin: 20px auto;
     position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 /** Carousel **/
@@ -28,27 +23,19 @@
     padding: 0;
 }
 
-.jcarousel li {
-    width: 200px;
+.jcarousel > ul > li {
     float: left;
-    border: 1px solid #fff;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    padding-right: 10px;
 }
 
-.jcarousel img {
-    display: block;
-    max-width: 100%;
-    height: auto !important;
-}
 
 /** Carousel Controls **/
 
 a.jcarousel-control-prev,
 a.jcarousel-control-next {
+    display: none;
     position: absolute;
-    top: 50%;
+    top: 75px;
     margin-top: -15px;
     width: 30px;
     height: 30px;
@@ -116,4 +103,28 @@ a.jcarousel-control-next {
     -webkit-box-shadow: 0 0 2px #F0EFE7;
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
+}
+@media screen and (max-width: 850px) {
+    a.jcarousel-control-prev,
+    a.jcarousel-control-next {
+        display: block;
+    }
+}
+@media screen and (max-width: 370px) {
+    .foto-article-news {
+        max-width: none;
+    }
+    .sub-article-news article {
+        padding-left: 15px;
+    }
+    a.jcarousel-control-prev,
+    a.jcarousel-control-next {
+        top: 75px;
+    }
+    a.jcarousel-control-next {
+        right: 1px;
+    }
+    a.jcarousel-control-prev {
+        left: 15px;
+    }
 }
