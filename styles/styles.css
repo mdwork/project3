@@ -61,7 +61,7 @@ a:hover                        { text-decoration:none; }
         .main-logo img {
             overflow: hidden;
             width: 100%;
-            max-width: 373px;
+            max-width: 350px;
             height: 100%;
             max-height: 76px;
             text-indent: -9999px;
@@ -522,7 +522,7 @@ a:hover                        { text-decoration:none; }
                     color: #686868;
                     font-size: 16px;
                 }
-                    .box-address header {
+                    .box-address header a {
                         margin-bottom: 5px;
                         color: #000;
                         font-size: 22px;
@@ -1475,12 +1475,21 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-@media screen and (max-width: 1084px) {
+@media screen and (max-width: 1090px) {
     .select-box-search-form li:last-child {
         margin-left: 0;
     }
     .bt-price-subscription {
         margin-bottom: 10px;
+    }
+    .select-box-search-form li {
+        width: 48%;
+    }
+    .select-box-search-form li .custom-input {
+        max-width: none;
+    }
+    .select-box-search-form li .little-select {
+     max-width: 123px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1492,8 +1501,15 @@ a:hover                        { text-decoration:none; }
         margin-left: 0;
     }
 }
+@media screen and (max-width: 925px) {
+    .wrap-scale-price {
+        float: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
-    .bt-show-red {
+    .bt-show-red,
+    .bt-reset {
         font-size: 15px;
     }
     .icon-close_js:after {
@@ -1506,6 +1522,13 @@ a:hover                        { text-decoration:none; }
     .left-column-fuel-prices,
     .right-column-fuel-prices {
         font-size: 12px;
+    }
+    #link-advanced-search {
+        display: block;
+        margin-top: 55px;
+    }
+    #link-advanced-search:hover {
+        margin-bottom: 1px;
     }
 }
 @media screen and (max-width: 855px) {
@@ -1555,6 +1578,12 @@ a:hover                        { text-decoration:none; }
         float: none;
         display: block;
     }
+    .box-special-placement {
+        text-align: left;
+    }
+    .box-fuel-prices {
+        border: none;
+    }
 }
 @media screen and (max-width: 680px) {
     .main-logo {
@@ -1590,6 +1619,11 @@ a:hover                        { text-decoration:none; }
         left: 0;
     }
 }
+@media screen and (max-width: 617px) {
+    #link-advanced-search {
+        margin-top: 15px;
+    }
+}
 @media screen and (max-width: 590px) {
     .list-advantage {
         font-size: 14px;
@@ -1606,6 +1640,10 @@ a:hover                        { text-decoration:none; }
     .select-box-search-form li {
         float: none;
         margin-left: 0;
+    }
+    .little-select {
+        max-width: 170px;
+        width: 48%;
     }
 }
 @media screen and (max-width: 560px) {
@@ -1636,6 +1674,17 @@ a:hover                        { text-decoration:none; }
         display: block;
         float: none;
         margin: 0 auto;
+    }
+    .list-advantage .first-advantage:before,
+    .list-advantage .second-advantage:before,
+    .list-advantage .third-advantage:before {
+        width: 53px;
+    }
+    .list-advantage .first-advantage:before {
+        background-position: 8px 0;
+    }
+    .list-advantage .third-advantage:before {
+        background-position: -325px 0;
     }
     .list-advantage-placement:after {
         top: 150px;
@@ -1803,6 +1852,22 @@ a:hover                        { text-decoration:none; }
     .list-reg-inputs {
         width: 280px;
     }
+    .custom-input {
+        max-width: none;
+    }
+    .select-box-search-form li {
+        width: auto;
+    }
+    .form-subscription {
+        max-width: none;
+    }
+    .horizontal-list-select .little-select {
+        width: auto;
+    }
+    .horizontal-list-select .custom-input {
+        width: 100%;
+        max-width: 111px;
+    }
 }
 @media screen and (max-width: 430px) {
     .header-second {
@@ -1824,7 +1889,7 @@ a:hover                        { text-decoration:none; }
     }
     .list-autoservice a {
         display: inline-block;
-        width: 75px;
+        width: 96px;
         margin-right: 25px;
     }
     .wrap-reg-autoreg-form {
