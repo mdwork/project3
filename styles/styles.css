@@ -730,15 +730,10 @@ a:hover                        { text-decoration:none; }
         background: #F7F7F7;
     }
         .list-benefits {
-            overflow: hidden;
-            max-width: 670px;
-            width: 100%;
+
             margin: 30px auto 0;
         }
             .list-benefits > li {
-                float: left;
-                width: 30%;
-                padding: 1.5%;
                 text-align: center;
             }
                 .icon-benefits {
