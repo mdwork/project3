@@ -143,8 +143,8 @@ a:hover                        { text-decoration:none; }
             display: block;
             position: absolute;
             z-index: 10;
-            top: 58px;
-            left: 0;
+            top: 59px;
+            left: -1px;
         }
             .nav > li a {
                 display: block;
