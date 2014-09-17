@@ -98,7 +98,8 @@ a:hover                        { text-decoration:none; }
                     text-decoration: none;
                 }
                 .wrap-registration a:hover {
-                    border-bottom: none;
+                    color: #d7270e;
+                    border-color: #d7270e;
                 }
 
         .add-ads {
@@ -113,7 +114,7 @@ a:hover                        { text-decoration:none; }
             cursor: pointer;
         }
         .add-ads:hover {
-            text-decoration: none;
+            color: #909090;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
@@ -953,6 +954,10 @@ a:hover                        { text-decoration:none; }
                         color: #d7270e;
                         font-size: 18px;
                     }
+                     .nav-footer li a:hover {
+                        color: #909090;
+                         text-decoration: underline;
+                     }
         .partners-footer {
             float: right;
         }
@@ -963,6 +968,10 @@ a:hover                        { text-decoration:none; }
                 color: #2a353b;
                 font-size: 15px;
             }
+             .partners-footer a:hover {
+                color: #d7270e;
+                 text-decoration: underline;
+             }
             .partners-footer .partners-foto {
                 display: block;
             }
@@ -1005,7 +1014,7 @@ a:hover                        { text-decoration:none; }
     }
         .wrap-reg-autoreg-form {
             display: none;
-            max-width: 370px;
+            max-width: 385px;
             width: 100%;
             padding: 30px 35px 40px;
         }
@@ -1022,6 +1031,9 @@ a:hover                        { text-decoration:none; }
             }
             .active-page:hover a {
                 color: #5e5f60;
+            }
+            #link-autoreg {
+                margin-left: 15px;
             }
 
             #reg-form,
@@ -1087,11 +1099,11 @@ a:hover                        { text-decoration:none; }
                     margin-bottom: 20px;
                 }
                 #reg-form input[type="submit"] {
+                    display: block;
                     width: 258px;
+                    margin-bottom: 10px !important;
                 }
                 a.recover-pass {
-                    display: block;
-                    margin-top: 10px;
                     font-size: 15px;
                     color: #d7270d;
                 }
@@ -1152,7 +1164,7 @@ a:hover                        { text-decoration:none; }
                 font-size: 32px;
                 color: #5e5f60;
             }
-                #popup-reg header h3 {
+                #popup-reg header div {
                     margin: 0 19px 25px;
                     font-size: 22px;
                     font-weight: 500;
@@ -1375,9 +1387,9 @@ a:hover                        { text-decoration:none; }
     #popup-advanced-search {
         overflow: hidden;
         display: none;
-        padding: 20px 29px;
+        padding: 20px 17px;
     }
-        #popup-advanced-search header h2 {
+        #popup-advanced-search header div {
             margin-bottom: 16px;
             line-height: 42px;
             font-size: 32px;
@@ -1600,7 +1612,7 @@ a:hover                        { text-decoration:none; }
         margin-left: 10px;
     }
     .nav > li:hover ul {
-        top: 37px;
+        top: 38px;
     }
     .box-review {
         float: none;
@@ -1686,7 +1698,7 @@ a:hover                        { text-decoration:none; }
         top: 150px;
     }
     .sell-car {
-        font-size: 16px;
+        font-size: 21x;
     }
     #popup-reg header h3 {
         font-size: 15px;
@@ -1845,6 +1857,10 @@ a:hover                        { text-decoration:none; }
     a.bt-toggle {
         font-size: 14px;
     }
+    #link-autoreg,
+    #link-reg {
+        font-size: 17px;
+    }
     .list-reg-inputs {
         width: 280px;
     }
@@ -1901,6 +1917,9 @@ a:hover                        { text-decoration:none; }
     }
     #list-reg-link_js li {
         margin-left: 12%;
+    }
+    #list-reg-link_js li:first-child {
+        margin-left: 6%;
     }
 }
 @media screen and (max-width: 380px) {
