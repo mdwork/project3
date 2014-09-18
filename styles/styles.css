@@ -70,6 +70,10 @@ a:hover                        { text-decoration:none; }
             .main-logo img {
                 display: block;
             }
+            .main-logo span {
+                display: block;
+                text-indent: -9999px;
+            }
 
         .wrap-registration {
             float: right;
@@ -307,7 +311,7 @@ a:hover                        { text-decoration:none; }
                 }
                 .select-box-search-form.bottom .little-input {
                     max-width: 58px;
-                    margin-right: 4px;
+                    margin-right: 7px;
                 }
         .box-price {
             overflow: hidden;
@@ -663,7 +667,7 @@ a:hover                        { text-decoration:none; }
                 .foto-main-article-autosport {
                     float: left;
                     max-width: 483px;
-                    width: 100%;
+                    width: 60%;
                     max-height: 231px;
                     margin-right: 20px;
                 }
@@ -818,6 +822,9 @@ a:hover                        { text-decoration:none; }
             .form-subscription {
                 max-width: 202px;
             }
+            .form-add-auto {
+                overflow: hidden;
+            }
             .form-subscription li {
                 margin-bottom: 7px;
             }
@@ -836,15 +843,18 @@ a:hover                        { text-decoration:none; }
                     border: 1px solid #BFBFBF;
                 }
                 .input-subscription {
-                    max-width: 190px;
+                    max-width: 189px;
                     padding: 0 5px;
                 }
                 .bt-price-subscription {
-                    width: 82px;
+                    width: 82px !important;
                 }
             .bt-subscription {
                 width: 100%;
                 margin: 10px 0 0 0;
+            }
+            .width-input {
+                width: 202px;
             }
     .box-banner-link {
         margin-bottom: 10px;
@@ -1624,12 +1634,24 @@ a:hover                        { text-decoration:none; }
     .foto-main-article-autosport {
         float: none;
         display: block;
+        width: 100%;
     }
     .box-special-placement {
         text-align: left;
     }
     .box-fuel-prices {
         border: none;
+    }
+    .form-subscription {
+        max-width: 440px;
+    }
+    .form-subscription li {
+        float: left;
+        margin-right: 15px;
+    }
+    .select-subscription,
+    .input-subscription {
+        width: 202px;
     }
 }
 @media screen and (max-width: 680px) {
@@ -1690,7 +1712,9 @@ a:hover                        { text-decoration:none; }
     }
     .little-select {
         max-width: 170px;
-        width: 48%;
+    }
+    .width100 {
+        width: 48% !important;
     }
 }
 @media screen and (max-width: 560px) {
@@ -1737,7 +1761,7 @@ a:hover                        { text-decoration:none; }
         top: 150px;
     }
     .sell-car {
-        font-size: 21x;
+        font-size: 21px;
     }
     #popup-reg header h3 {
         font-size: 15px;
@@ -2125,4 +2149,29 @@ a:hover                        { text-decoration:none; }
 .ui-widget-header {
     border: 1px solid #D4D4D4;
     background: #BFBFBF;
+}
+.custom-select-bg {
+    position: relative;
+}
+.custom-select-bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 9px;
+    height: 5px;
+    background: url("../images/content/icon-triangle-disable.png") 0 0px no-repeat;
+    pointer-events:none;
+}
+.custom-select-mini-bg:after {
+    top: 10px;
+}
+.custom-select-bg select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.width100 {
+    width: 100%;
 }
