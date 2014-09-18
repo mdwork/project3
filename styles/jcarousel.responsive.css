@@ -39,9 +39,15 @@
 .jcarousel2 > ul > li,
 .jcarousel3 > ul > li{
     float: left;
-    padding-right: 10px;
 }
-.jcarousel2 > ul > li {
+.jcarousel > ul > li article,
+.jcarousel2 > ul > li article,
+.jcarousel3 > ul > li article {
+    padding-right: 10px;
+
+}
+.jcarousel2 > ul > li,
+.jcarousel3 > ul > li {
     padding-right: 0;
 }
 
@@ -139,9 +145,13 @@ a.jcarousel-control-next3 {
     a.jcarousel-control-prev,
     a.jcarousel-control-next,
     a.jcarousel-control-prev2,
-    a.jcarousel-control-next2,
+    a.jcarousel-control-next2 {
+        display: block;
+    }
+}
+@media screen and (max-width: 769px) {
     a.jcarousel-control-prev3,
-    a.jcarousel-control-next3{
+    a.jcarousel-control-next3 {
         display: block;
     }
 }
