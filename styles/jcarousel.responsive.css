@@ -6,6 +6,10 @@
     max-width: 670px;
     margin: 20px auto;
 }
+.slider-wrap3 {
+    max-width: 810px;
+    margin: 20px auto;
+}
 
 .jcarousel-wrapper {
     position: relative;
@@ -14,14 +18,16 @@
 /** Carousel **/
 
 .jcarousel,
-.jcarousel2 {
+.jcarousel2,
+.jcarousel3 {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
 .jcarousel ul,
-.jcarousel2 ul {
+.jcarousel2 ul,
+.jcarousel3 ul{
     width: 20000em;
     position: relative;
     list-style: none;
@@ -30,7 +36,8 @@
 }
 
 .jcarousel > ul > li,
-.jcarousel2 > ul > li {
+.jcarousel2 > ul > li,
+.jcarousel3 > ul > li{
     float: left;
     padding-right: 10px;
 }
@@ -44,7 +51,9 @@
 a.jcarousel-control-prev,
 a.jcarousel-control-next,
 a.jcarousel-control-prev2,
-a.jcarousel-control-next2 {
+a.jcarousel-control-next2,
+a.jcarousel-control-prev3,
+a.jcarousel-control-next3 {
     display: none;
     position: absolute;
     top: 75px;
@@ -66,19 +75,22 @@ a.jcarousel-control-next2 {
 }
 
 a.jcarousel-control-prev,
-a.jcarousel-control-prev2 {
+a.jcarousel-control-prev2,
+a.jcarousel-control-prev3 {
     left: 15px;
 }
 
 a.jcarousel-control-next,
-a.jcarousel-control-next2 {
+a.jcarousel-control-next2,
+a.jcarousel-control-next3 {
     right: 15px;
 }
 
 /** Carousel Pagination **/
 
 .jcarousel-pagination,
-.jcarousel-pagination2 {
+.jcarousel-pagination2,
+.jcarousel-pagination3 {
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -89,7 +101,8 @@ a.jcarousel-control-next2 {
 }
 
 .jcarousel-pagination a,
-.jcarousel-pagination2 a {
+.jcarousel-pagination2 a,
+.jcarousel-pagination3 a{
     text-decoration: none;
     display: inline-block;
 
@@ -112,7 +125,8 @@ a.jcarousel-control-next2 {
 }
 
 .jcarousel-pagination a.active,
-.jcarousel-pagination2 a.active {
+.jcarousel-pagination2 a.active,
+.jcarousel-pagination3 a.active{
     background: #4E443C;
     color: #fff;
     opacity: 1;
@@ -125,7 +139,9 @@ a.jcarousel-control-next2 {
     a.jcarousel-control-prev,
     a.jcarousel-control-next,
     a.jcarousel-control-prev2,
-    a.jcarousel-control-next2 {
+    a.jcarousel-control-next2,
+    a.jcarousel-control-prev3,
+    a.jcarousel-control-next3{
         display: block;
     }
 }
@@ -140,7 +156,9 @@ a.jcarousel-control-next2 {
     a.jcarousel-control-prev,
     a.jcarousel-control-next,
     a.jcarousel-control-prev2,
-    a.jcarousel-control-next2 {
+    a.jcarousel-control-next2,
+    a.jcarousel-control-prev3,
+    a.jcarousel-control-next3{
         top: 75px;
     }
 }

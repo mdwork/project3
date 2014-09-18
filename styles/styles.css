@@ -1654,6 +1654,11 @@ a:hover                        { text-decoration:none; }
         width: 202px;
     }
 }
+@media screen and (min-width: 769px) {
+    .jcarousel3 ul {
+        width: auto !important;
+    }
+}
 @media screen and (max-width: 680px) {
     .main-logo {
         float: none;
@@ -1985,6 +1990,17 @@ a:hover                        { text-decoration:none; }
         margin-left: 6%;
     }
 }
+@media screen and (max-width: 384px) {
+    .ad-sidebar {
+        float: none;
+        max-width: none;
+    }
+    .ad-sidebar img {
+        width: 96%;
+        max-width: none;
+        max-height: none;
+    }
+}
 @media screen and (max-width: 380px) {
     #registered-box {
         padding-left: 5px;
@@ -2018,9 +2034,6 @@ a:hover                        { text-decoration:none; }
         display: block;
         margin-top: 5px;
     }
-
-}
-@media screen and (max-width: 320px) {
 
 }
 /*----------------------------------------------------------------------------------*/
