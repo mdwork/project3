@@ -1301,7 +1301,7 @@ a:hover                        { text-decoration:none; }
                     left: 34px;
                     width: 12px;
                     height: 11px;
-                    background: url("../images/popup/reg_block_pointer.png");
+                    background: url("../images/popup/pointer.png");
                 }
             .reg-block-2 {
                 position: relative;
@@ -1499,10 +1499,24 @@ a:hover                        { text-decoration:none; }
                             width: 26px;
                             height: 24px;
                             margin-right: 5px;
+                            position: absolute;
+                            left: -9999px;
                         }
                         .list-values label {
+                            position: relative;
                             font-size: 16px;
                             color: #686868;
+                        }
+                        .list-values label:before {
+                            content: "";
+                            display: inline-block;
+                            width: 24px;
+                            height: 22px;
+                            background-color: #ffffff;
+                            border: 1px solid #BFBFBF;
+                        }
+                        .list-values .bg-label_js:before {
+                            background: url("../images/popup/pointer.png") center center #ffffff;
                         }
                         .list-values select {
                             max-width: 175px;

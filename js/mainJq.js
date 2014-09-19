@@ -281,4 +281,15 @@
             $(this).prop('placeholder', textPlaceholder);
         });
     });
+
+    $('.check-other-parameters').parent().on('click', function(e){
+        var curLabel = $(e.target).parent();
+        if(curLabel.hasClass('check-other-parameters')) {
+            curLabel.removeClass('check-other-parameters');
+        }
+        else if (curLabel.hasClass('check-other-parameters')) {
+            curLabel.hasClass('check-other-parameters');
+        }
+        console.log(curLabel.hasClass('check-other-parameters'));
+    });
 })(jQuery);
