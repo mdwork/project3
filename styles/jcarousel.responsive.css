@@ -1,6 +1,6 @@
 .slider-wrap {
     max-width: 810px;
-    margin: 20px auto;
+    margin: 20px 0 20px 10px;
 }
 .slider-wrap2 {
     max-width: 670px;
@@ -160,7 +160,6 @@ a.jcarousel-control-next3 {
         max-width: none;
     }
     .sub-article-news article {
-        padding-left: 15px;
         padding-right: 15px;
     }
     a.jcarousel-control-prev,

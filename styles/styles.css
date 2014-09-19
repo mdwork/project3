@@ -76,8 +76,8 @@ a:hover                        { text-decoration:none; }
             }
 
         .wrap-registration {
-            float: right;
             display: none;
+            float: right;
             margin-top: 30px;
             color: #909090;
             font-size: 16px;
@@ -925,7 +925,6 @@ a:hover                        { text-decoration:none; }
 
     .box-fuel-prices {
         overflow: hidden;
-        max-width: 240px;
         padding: 0 17px;
         border: 1px solid #E4E4E4;
         border-top: none;
@@ -1509,6 +1508,8 @@ a:hover                        { text-decoration:none; }
                         }
                         .list-values label:before {
                             content: "";
+                            position: relative;
+                            top: 8px;
                             display: inline-block;
                             width: 24px;
                             height: 22px;
@@ -1562,6 +1563,18 @@ a:hover                        { text-decoration:none; }
     .select-box-search-form li .little-select {
      max-width: 123px;
     }
+    .box-autoservices {
+        border-left: 0;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .list-advantage {
+        float: none;
+        margin-bottom: 10px;
+    }
+    .list-advantage li:first-child {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 1024px) {
     .list-advantage {
@@ -1600,6 +1613,12 @@ a:hover                        { text-decoration:none; }
     }
     #link-advanced-search:hover {
         margin-bottom: 1px;
+    }
+    .box-review {
+        float: none;
+    }
+    .list-stars {
+        text-align: left;
     }
 }
 @media screen and (max-width: 855px) {
@@ -1657,15 +1676,27 @@ a:hover                        { text-decoration:none; }
         border: none;
     }
     .form-subscription {
-        max-width: 440px;
+        max-width: none;
     }
     .form-subscription li {
         float: left;
-        margin-right: 15px;
+        margin-right: 3%;
+        width: 47%;
     }
     .select-subscription,
     .input-subscription {
-        width: 202px;
+        width: 100%;
+    }
+    .foto-main-article-autosport {
+        max-width: none;
+        max-height: none;
+    }
+    a.jcarousel-control-next2 {
+        right: 12px !important;
+    }
+    .responsive-email {
+        width: 95% !important;
+        max-width: none;
     }
 }
 @media screen and (min-width: 769px) {
@@ -1753,6 +1784,25 @@ a:hover                        { text-decoration:none; }
     }
     .nav > li:hover ul {
         top: 35px;
+        left: 0;
+    }
+    .form-subscription li {
+        float: left;
+        margin-right: 15px;
+        width: auto;
+    }
+    .select-subscription,
+    .input-subscription {
+        width: 202px;
+    }
+    .foto-main-article-autosport {
+        max-width: none;
+        max-height: none;
+    }
+
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
     }
 }
 @media screen and (max-width: 480px) {
@@ -1793,6 +1843,10 @@ a:hover                        { text-decoration:none; }
     }
     .list-advantage-placement {
         margin-bottom: 200px;
+    }
+    .wrap-profile {
+        float: none;
+        margin-left: 8px;
     }
 }
 @media screen and (max-width: 460px) {
@@ -1885,6 +1939,7 @@ a:hover                        { text-decoration:none; }
         font-size: 16px;
     }
     .list-benefits p {
+        padding: 0 5px;
         font-size: 12px;
     }
     .footer-logo,
@@ -1962,6 +2017,21 @@ a:hover                        { text-decoration:none; }
         width: 100%;
         max-width: 111px;
     }
+    a.jcarousel-control-next2 {
+        top: 65px !important;
+        right: 9px !important;
+    }
+    .info-about-article-review,
+    .info-about-article-comment {
+        overflow: hidden;
+        float: none;
+    }
+    .info-about-article-comment {
+        margin-top: 10px;
+    }
+    .info-about-article-comment:before {
+        display: block;
+    }
 }
 @media screen and (max-width: 430px) {
     .header-second {
@@ -2024,6 +2094,19 @@ a:hover                        { text-decoration:none; }
     }
     .total-payment input[type="submit"] {
         margin: 0;
+    }
+}
+@media screen and (max-width: 379px) {
+    .info-about-article-review,
+    .info-about-article-comment {
+        overflow: hidden;
+        float: left;
+    }
+    .info-about-article-comment {
+        margin-top: 0;
+    }
+    .info-about-article-comment:before {
+        float: left;
     }
 }
 @media screen and (max-width: 350px) {
