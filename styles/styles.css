@@ -1516,7 +1516,7 @@ a:hover                        { text-decoration:none; }
                             border: 1px solid #BFBFBF;
                         }
                         .list-values .bg-label_js:before {
-                            background: url("../images/popup/pointer.png") center center #ffffff;
+                            background: url("../images/popup/pointer.png") no-repeat center center #ffffff;
                         }
                         .list-values select {
                             max-width: 175px;
