@@ -163,6 +163,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .bg-nav {
+    height: 60px;
     background: #5E5F60;
 }
 #menu-icon {
@@ -171,6 +172,7 @@ a:hover                        { text-decoration:none; }
     .nav {
         max-width: 1080px;
         width: 100%;
+        max-height: 60px;
         margin: 0 auto;
     }
         .nav > li {
@@ -187,12 +189,12 @@ a:hover                        { text-decoration:none; }
             display: block;
             position: absolute;
             z-index: 10;
-            top: 59px;
+            top: 60px;
             left: -1px;
         }
             .nav > li a {
                 display: block;
-                padding: 18px 20px;
+                padding: 18px 20px 19px;
                 color: #fff;
                 background: no-repeat right;
                 font-size: 18px;
@@ -203,10 +205,11 @@ a:hover                        { text-decoration:none; }
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
+                line-height: 1.3;
             }
             .nav > li > a:hover {
                 background: #3A3B3C no-repeat right;
-                padding-bottom: 17px;
+                padding-bottom: 19px;
             }
 
             .sub-menu {
@@ -361,6 +364,9 @@ a:hover                        { text-decoration:none; }
                 background: #D7270D;
                 border: none;
                 font-weight: 100;
+            }
+            .bt-show-red:hover {
+                background: #666;
             }
             .bt-reset {
                 margin-left: 5px;
@@ -1491,6 +1497,7 @@ a:hover                        { text-decoration:none; }
                     position: absolute;
                     top: 0;
                     left: 304px;
+                    opacity: 0;
                 }
                     .list-values li {
                         margin-bottom: 7px;
@@ -2057,7 +2064,8 @@ a:hover                        { text-decoration:none; }
         width: 100%;
         max-width: 111px;
     }
-    a.jcarousel-control-next2 {
+    a.jcarousel-control-next2,
+    a.jcarousel-control-prev2 {
         top: 65px !important;
         right: 9px !important;
     }
@@ -2202,6 +2210,11 @@ a:hover                        { text-decoration:none; }
     .responsive-email {
         width: 190px !important;
         max-width: none;
+    }
+}
+@media screen and (max-width: 370px) {
+    a.jcarousel-control-next {
+        right: 25px !important;
     }
 }
 @media screen and (max-width: 350px) {

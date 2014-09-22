@@ -251,8 +251,10 @@
     });
 
     var menuDynamik = $('.list-other-parameters > li > a');
+    $('.active .list-values').css("opacity", 1);
     menuDynamik.on('click', function(e){
         e.preventDefault();
+        $('.active .list-values').css("opacity", 0);
 
         menuDynamik.parent().each(function(){
             if($(this).hasClass('active')) {
@@ -261,6 +263,7 @@
         });
 
         $(e.target).parent().addClass('active');
+        $('.active .list-values').animate({"opacity": 1}, 500);
     });
 
 
