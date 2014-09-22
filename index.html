@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Forsage - Автомобильный портал</title>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/jcarousel.responsive.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -131,12 +132,12 @@
                 </span>
 
                 <form action="#" method="post" class="form-search-features">
-                    <ul class="select-box-search-form">
+                    <ul class="select-box-search-form main-select-box-search-form">
                         <!--first column-->
                         <li>
                             <span class="name-input">Марка</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>Audi</option>
                                     <option>Ford</option>
                                 </select>
@@ -144,7 +145,7 @@
 
                             <span class="name-input">Модель</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>GL550</option>
                                     <option>GL550</option>
                                 </select>
@@ -153,14 +154,14 @@
                             <span class="name-input">Год выпуска</span>
                             <div class="clearfix">
                                 <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
-                                    <select class="custom-input custom-select-height">
+                                    <select class="custom-input custom-select-height custom-select_js">
                                         <option>2013</option>
                                         <option>2014</option>
                                     </select>
                                 </label>
 
                                 <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
-                                    <select class="custom-input custom-select-height">
+                                    <select class="custom-input custom-select-height custom-select_js custom-select_js">
                                         <option>2013</option>
                                         <option>2014</option>
                                     </select>
@@ -172,7 +173,7 @@
                         <li>
                             <span class="name-input">Кузов</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js custom-select_js">
                                     <option>Внедородник</option>
                                     <option>Внедородник</option>
                                 </select>
@@ -180,7 +181,7 @@
 
                             <span class="name-input">Тип двигателя</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js custom-select_js">
                                     <option>Бензин</option>
                                     <option>Бензин</option>
                                 </select>
@@ -189,14 +190,14 @@
                             <span class="name-input">Объем двигателя</span>
                             <div class="clearfix">
                                 <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
-                                    <select class="custom-input custom-select-height">
+                                    <select class="custom-input custom-select-height custom-select_js">
                                         <option>4,5л</option>
                                         <option>7,0л</option>
                                     </select>
                                 </label>
 
                                 <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
-                                    <select class="custom-input custom-select-height">
+                                    <select class="custom-input custom-select-height custom-select_js">
                                         <option>7,0л</option>
                                         <option>7,0л</option>
                                     </select>
@@ -208,7 +209,7 @@
                         <li>
                             <span class="name-input">Период</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>1 месяц</option>
                                     <option>1 месяц</option>
                                 </select>
@@ -216,7 +217,7 @@
 
                             <span class="name-input">Город</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>Минск</option>
                                     <option>Минск</option>
                                 </select>
@@ -224,7 +225,7 @@
 
                             <span class="name-input">Фото</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>Необязательно</option>
                                     <option>Необязательно</option>
                                 </select>
@@ -255,7 +256,7 @@
                             <li>
                                 <span class="name-input">Валюта</span>
                                 <label class="custom-select-bg">
-                                    <select class="custom-input custom-select-height little-select">
+                                    <select class="custom-input custom-select-height little-select custom-select_js">
                                         <option>Доллар</option>
                                         <option>Евро</option>
                                     </select>
@@ -1094,7 +1095,7 @@
                         <li>
                             <span class="name-select-subscription">Марка</span>
                             <label class="custom-select-bg">
-                                <select class="select-subscription">
+                                <select class="select-subscription custom-select_js">
                                     <option>111</option>
                                     <option>222</option>
                                 </select>
@@ -1104,7 +1105,7 @@
                         <li>
                             <span class="name-select-subscription">Модель</span>
                             <label class="custom-select-bg">
-                                <select class="select-subscription">
+                                <select class="select-subscription custom-select_js">
                                     <option>111</option>
                                     <option>222</option>
                                 </select>
@@ -1114,7 +1115,7 @@
                         <li>
                             <span class="name-select-subscription">Год выпуска</span>
                             <label class="custom-select-bg">
-                                <select class="select-subscription">
+                                <select class="select-subscription custom-select_js">
                                     <option>111</option>
                                     <option>222</option>
                                 </select>
@@ -1124,7 +1125,7 @@
                         <li>
                             <span class="name-select-subscription">Кузов</span>
                             <label class="custom-select-bg">
-                                <select class="select-subscription">
+                                <select class="select-subscription custom-select_js">
                                     <option>111</option>
                                     <option>222</option>
                                 </select>
@@ -1134,7 +1135,7 @@
                         <li>
                             <span class="name-select-subscription">Тип топлива</span>
                             <label class="custom-select-bg">
-                                <select class="select-subscription">
+                                <select id="aaa" class="select-subscription custom-select_js">
                                     <option>111</option>
                                     <option>222</option>
                                 </select>
@@ -1475,7 +1476,7 @@
                     <li>
                         <span class="name-input">Марка</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Audi</option>
                                 <option>Ford</option>
                             </select>
@@ -1483,7 +1484,7 @@
 
                         <span class="name-input">Модель</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>GL550</option>
                                 <option>GL550</option>
                             </select>
@@ -1492,14 +1493,14 @@
                         <span class="name-input">Год выпуска</span>
                         <div class="clearfix">
                             <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>2013</option>
                                     <option>2014</option>
                                 </select>
                             </label>
 
                             <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>2013</option>
                                     <option>2014</option>
                                 </select>
@@ -1511,7 +1512,7 @@
                     <li>
                         <span class="name-input">Кузов</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Внедородник</option>
                                 <option>Внедородник</option>
                             </select>
@@ -1519,7 +1520,7 @@
 
                         <span class="name-input">Тип двигателя</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Бензин</option>
                                 <option>Бензин</option>
                             </select>
@@ -1528,14 +1529,14 @@
                         <span class="name-input">Объем двигателя</span>
                         <div class="clearfix">
                             <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>4,5л</option>
                                     <option>7,0л</option>
                                 </select>
                             </label>
 
                             <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>7,0л</option>
                                     <option>7,0л</option>
                                 </select>
@@ -1547,7 +1548,7 @@
                     <li>
                         <span class="name-input">Период</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>1 месяц</option>
                                 <option>1 месяц</option>
                             </select>
@@ -1555,7 +1556,7 @@
 
                         <span class="name-input">Город</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Минск</option>
                                 <option>Минск</option>
                             </select>
@@ -1563,7 +1564,7 @@
 
                         <span class="name-input">Фото</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Необязательно</option>
                                 <option>Необязательно</option>
                             </select>
@@ -1594,7 +1595,7 @@
                         <li>
                             <span class="name-input">Валюта</span>
                             <label class="custom-select-bg">
-                                <select class="custom-input custom-select-height little-select">
+                                <select class="custom-input custom-select-height little-select custom-select_js">
                                     <option>Доллар</option>
                                     <option>Евро</option>
                                 </select>
@@ -1608,10 +1609,10 @@
                     <li>
                         <span class="name-input">Пробег</span>
                         <div class="clearfix">
-                            <input type="text" class="custom-input little-input float-l" placeholder="100000">
-                            <input type="text" class="custom-input little-input float-l" placeholder="700000">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="100000">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="700000">
                             <label class="custom-select-bg width100 custom-select-mini-bg little-select float-l">
-                                <select class="custom-input custom-select-height">
+                                <select class="custom-input custom-select-height custom-select_js">
                                     <option>Любой тип</option>
                                     <option>Любой тип</option>
                                 </select>
@@ -1620,7 +1621,7 @@
 
                         <span class="name-input">Количество дверей</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>2</option>
@@ -1629,7 +1630,7 @@
 
                         <span class="name-input">КПП</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>АКПП</option>
                                 <option>МКПП</option>
                             </select>
@@ -1640,7 +1641,7 @@
                     <li>
                         <span class="name-input">Состояние</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Любое</option>
                                 <option>Битая</option>
                                 <option>Крашенная</option>
@@ -1649,7 +1650,7 @@
 
                         <span class="name-input">Цвет</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Любой</option>
                                 <option>Черный</option>
                                 <option>Белый</option>
@@ -1658,7 +1659,7 @@
 
                         <span class="name-input">Сортировать по</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Дате добавления</option>
                                 <option>Цене</option>
                             </select>
@@ -1669,7 +1670,7 @@
                     <li>
                         <span class="name-input">Таможня</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Любая</option>
                                 <option>Любая</option>
                             </select>
@@ -1677,7 +1678,7 @@
 
                         <span class="name-input">Привод</span>
                         <label class="custom-select-bg">
-                            <select class="custom-input custom-select-height">
+                            <select class="custom-input custom-select-height custom-select_js">
                                 <option>Полный</option>
                                 <option>Передний</option>
                                 <option>Задний</option>
@@ -1714,8 +1715,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -1772,8 +1773,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -1830,8 +1831,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -1888,8 +1889,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -1946,8 +1947,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2004,8 +2005,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2062,8 +2063,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2120,8 +2121,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2178,8 +2179,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2236,8 +2237,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2294,8 +2295,8 @@
                                 </li>
 
                                 <li>
-                                    <label class="custom-select-bg custom-select-mini-bg">
-                                        <select class="select-other-parameters">
+                                    <label class="custom-select-bg custom-select-mini-bg2 custom-select-mini-bg">
+                                        <select class="select-other-parameters custom-select_js">
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
                                             <option>Airbag боковые</option>
@@ -2338,6 +2339,7 @@
     </div><!--end BG POPUP-->
 
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script src="js/mainJq.js"></script>
     <script src="js/jquery-1.6.1.min.js"></script>
     <script src="js/jquery.ui-slider.js"></script>

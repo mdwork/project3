@@ -291,6 +291,11 @@
         else if (!curLabel.hasClass('bg-label_js')) {
             curLabel.addClass('bg-label_js');
         }
-
     });
+
+
+    $(".custom-select_js").selectmenu();
+
+    $(".ui-selectmenu-button").addClass( "custom-input custom-select-height" );
+    $(".select-subscription").parent().children(".ui-selectmenu-button").addClass("select-subscription");
 })(jQuery);

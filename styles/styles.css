@@ -288,15 +288,16 @@ a:hover                        { text-decoration:none; }
                     font-size: 15px;
                 }
                 .custom-input {
-                    max-width: 258px;
-                    width: 100%;
+                    max-width: 256px;
+                    width: 99% !important;
                     height: 22px;
                     margin-bottom: 15px;
                     color: #b5b5b5;
                     border: 1px solid #BFBFBF;
                     font-size: 14px;
                 }
-                .custom-select-height {
+                .custom-select-height,
+                .custom-select-height2 {
                     height: 24px;
                 }
                 .little-select {
@@ -1548,13 +1549,13 @@ a:hover                        { text-decoration:none; }
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 @media screen and (max-width: 1090px) {
-    .select-box-search-form li:last-child {
+    .main-select-box-search-form li:last-child {
         margin-left: 0;
     }
     .bt-price-subscription {
         margin-bottom: 10px;
     }
-    .select-box-search-form li {
+    .main-select-box-search-form li {
         width: 48%;
     }
     .select-box-search-form li .custom-input {
@@ -1574,6 +1575,10 @@ a:hover                        { text-decoration:none; }
     }
     .list-advantage li:first-child {
         margin-left: 0;
+    }
+    .input-subscription {
+        padding: 0;
+        width: auto;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1631,6 +1636,19 @@ a:hover                        { text-decoration:none; }
     .header-second {
         font-size: 18px;
     }
+    .select-box-search-form li {
+        width: 48%;
+    }
+    .select-box-search-form li:last-child {
+        margin-left: 0;
+    }
+    .select-subscription,
+    .input-subscription {
+        width: 98% !important;
+    }
+    .bt-price-subscription {
+        max-width: 130px;
+    }
 }
 @media screen and (max-width: 768px) {
     .content,
@@ -1650,6 +1668,9 @@ a:hover                        { text-decoration:none; }
     }
     .list-autoservice {
         margin-left: 10px;
+    }
+    .input-subscription {
+        padding: 0 5px;
     }
     .copyright-box,
     .partners-footer {
@@ -1686,6 +1707,10 @@ a:hover                        { text-decoration:none; }
     .select-subscription,
     .input-subscription {
         width: 100%;
+        max-width: none;
+    }
+    .bt-price-subscription {
+        max-width: 130px;
     }
     .foto-main-article-autosport {
         max-width: none;
@@ -1793,7 +1818,7 @@ a:hover                        { text-decoration:none; }
     }
     .select-subscription,
     .input-subscription {
-        width: 202px;
+        width: 202px !important;
     }
     .foto-main-article-autosport {
         max-width: none;
@@ -1803,6 +1828,10 @@ a:hover                        { text-decoration:none; }
     .responsive-email {
         width: 190px !important;
         max-width: none;
+    }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
     }
 }
 @media screen and (max-width: 480px) {
@@ -1910,7 +1939,10 @@ a:hover                        { text-decoration:none; }
         right: -155px;
         left: auto;
     }
-
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
 }
 
 @media screen and (min-width: 460px) {
@@ -2003,9 +2035,17 @@ a:hover                        { text-decoration:none; }
     }
     .custom-input {
         max-width: none;
+        width: 99% !important
+    }
+    .select-box-search-form li .little-select {
+        max-width: none;
     }
     .select-box-search-form li {
         width: auto;
+    }
+    .select-subscription,
+    .input-subscription {
+        width: 202px !important;
     }
     .form-subscription {
         max-width: none;
@@ -2032,6 +2072,14 @@ a:hover                        { text-decoration:none; }
     .info-about-article-comment:before {
         display: block;
     }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
+    }
 }
 @media screen and (max-width: 430px) {
     .header-second {
@@ -2041,6 +2089,7 @@ a:hover                        { text-decoration:none; }
     .toggle-search-form {
         right: 5px;
     }
+
     .horizontal-list-select li:last-child {
         margin-left: 0;
     }
@@ -2073,6 +2122,14 @@ a:hover                        { text-decoration:none; }
     #list-reg-link_js li:first-child {
         margin-left: 6%;
     }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
+    }
 }
 @media screen and (max-width: 384px) {
     .ad-sidebar {
@@ -2084,6 +2141,18 @@ a:hover                        { text-decoration:none; }
         max-width: none;
         max-height: none;
     }
+    .select-subscription,
+    .input-subscription {
+        width: 202px !important;
+    }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
+    }
 }
 @media screen and (max-width: 380px) {
     #registered-box {
@@ -2094,6 +2163,14 @@ a:hover                        { text-decoration:none; }
     }
     .total-payment input[type="submit"] {
         margin: 0;
+    }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
     }
 }
 @media screen and (max-width: 379px) {
@@ -2107,6 +2184,24 @@ a:hover                        { text-decoration:none; }
     }
     .info-about-article-comment:before {
         float: left;
+    }
+    .wrap-profile {
+        width: auto;
+    }
+    .custom-input {
+        width: 98% !important;
+    }
+    .select-subscription,
+    .input-subscription {
+        width: 202px !important;
+    }
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
     }
 }
 @media screen and (max-width: 350px) {
@@ -2131,7 +2226,14 @@ a:hover                        { text-decoration:none; }
         display: block;
         margin-top: 5px;
     }
-
+    .bt-price-subscription {
+        max-width: none;
+        width: 192px !important;
+    }
+    .responsive-email {
+        width: 190px !important;
+        max-width: none;
+    }
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
@@ -2251,7 +2353,7 @@ a:hover                        { text-decoration:none; }
 .ui-slider-horizontal .ui-slider-range-max {
     right: 0;
 }
-.ui-widget-content {
+.ui-widget-content2 {
     height: 4px;
     border: 1px solid #BFBFBF;
     background: #fff;
@@ -2263,24 +2365,12 @@ a:hover                        { text-decoration:none; }
 .custom-select-bg {
     position: relative;
 }
-.custom-select-bg:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 2px;
-    right: 5px;
-    width: 9px;
-    height: 5px;
-    background: url("../images/content/icon-triangle-disable.png") 0 0px no-repeat;
-    pointer-events:none;
-}
-.custom-select-mini-bg:after {
-    top: 10px;
-}
-.custom-select-bg select {
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
+.custom-select-mini-bg2 .ui-selectmenu-button {
+    max-width: 175px;
+    margin-bottom: 0;
+    position: relative;
+    top: 8px;
+    height: 22px;
 }
 .width100 {
     width: 100%;
