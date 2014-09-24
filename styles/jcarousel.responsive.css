@@ -150,6 +150,11 @@ a.jcarousel-control-next3 {
         display: block;
     }
 }
+@media screen and (max-width: 384px) {
+    a.jcarousel-control-next3 {
+        right: 13px;
+    }
+}
 @media screen and (max-width: 370px) {
     .foto-article-news {
         max-width: none;
