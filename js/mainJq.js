@@ -181,6 +181,17 @@
             }
             catch (err) {}
 
+            bgPopup.height($(document).height());
+
+            var fotoInPopupW = fotoPopup.width(),
+                clientW = document.body.clientWidth,
+                scrollTop = window.pageYOffset;
+
+            fotoPopup.css({
+                'marginTop': scrollTop + 100 + 'px',
+                'marginLeft': clientW/2 - fotoInPopupW / 2 + 'px'
+            });
+
             $('.icon-close_js, #bg-popup').on('click', function() {
                 bgPopup.removeClass('show_js');
                 $('.icon-close_js').remove();
@@ -198,16 +209,8 @@
                 e.stopPropagation();
             });
 
-            bgPopup.height($(document).height());
-
-            var fotoInPopupW = fotoPopup.width(),
-                clientW = document.body.clientWidth,
-                scrollTop = window.pageYOffset;
-
-            fotoPopup.css({
-                'marginTop': scrollTop + 100 + 'px',
-                'marginLeft': clientW/2 - fotoInPopupW / 2 + 'px'
-            });
+            console.log(clientW);
+            console.log(fotoInPopupW);
         });
     }
     /*end*/
