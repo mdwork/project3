@@ -873,8 +873,14 @@ a:hover                        { text-decoration:none; }
         color: #d7260e;
         border: 1px solid #E4E4E4;
         font-size: 17px;
-        text-decoration: underline;
     }
+        .box-banner-link a {
+            color: #d7260e;
+            font-size: 17px;
+        }
+        .box-banner-link a:hover {
+            text-decoration: none;
+        }
 
     .box-special-placement {
         overflow: hidden;
@@ -1632,7 +1638,7 @@ a:hover                        { text-decoration:none; }
         margin-top: 55px;
     }
     #link-advanced-search:hover {
-        margin-bottom: 1px;
+        margin-bottom: 11px;
     }
     .box-review {
         float: none;

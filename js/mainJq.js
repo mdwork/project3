@@ -188,16 +188,24 @@
                 scrollTop = window.pageYOffset;
 
             fotoPopup.css({
-                'marginTop': scrollTop + 100 + 'px',
-                'marginLeft': clientW/2 - fotoInPopupW / 2 + 'px'
+                'top': scrollTop + 100,
+                'left': '50%',
+                'margin-left': - (fotoInPopupW / 2)
             });
 
             $('.icon-close_js, #bg-popup').on('click', function() {
                 bgPopup.removeClass('show_js');
                 $('.icon-close_js').remove();
                 showCurrentForm.removeClass('show_js');
+
                 $(showCurrentForm).find('.show_js').removeClass('show_js');
-                fotoPopup.css('opacity', 0);
+
+                fotoPopup.css({
+                    'opacity' : 0,
+                    'top': 0,
+                    'left': 0,
+                    'margin-left': 0
+                });
 
                 try {
                     subForm.removeClass('show_js');
