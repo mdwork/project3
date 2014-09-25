@@ -312,4 +312,18 @@
 
     $(".ui-selectmenu-button").addClass( "custom-input custom-select-height" );
     $(".select-subscription").parent().children(".ui-selectmenu-button").addClass("select-subscription");
+
+    /*collage toggle*/
+    var littleFotoCollage = $('.list-foto-collage img'),
+        wrapMainFotoCollage = $('.wrap-main-auto');
+
+    littleFotoCollage.on('click', function(e){
+        var activeFotoCollage = $(e.target).clone();
+
+            wrapMainFotoCollage.children('img').remove();
+            activeFotoCollage.css('opacity', 0);
+            wrapMainFotoCollage.prepend(activeFotoCollage);
+            activeFotoCollage.animate({'opacity': 1}, 500);
+    });
+    /*end*/
 })(jQuery);
