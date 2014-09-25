@@ -969,6 +969,20 @@ a:hover                        { text-decoration:none; }
                 display: block;
                 margin-left: 78%;
             }
+/*---------------LIST AUTO WITHOUT LOGO-------------*/
+    .list-auto-without-logo {
+        overflow: hidden;
+        margin: 25px 0 25px 45px;
+    }
+        .list-auto-without-logo li {
+            float: left;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+            .list-auto-without-logo li a {
+                color: #12181d;
+                font-size: 17px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
