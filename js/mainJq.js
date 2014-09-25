@@ -314,16 +314,35 @@
     $(".select-subscription").parent().children(".ui-selectmenu-button").addClass("select-subscription");
 
     /*collage toggle*/
+    function collageToggle(targetFoto, wrapMainFoto) {
+        targetFoto.on('click', function(e){
+            var activeFotoCollage = $(e.target).clone();
+
+            wrapMainFoto.children('img').remove();
+            activeFotoCollage.css('opacity', 0);
+            wrapMainFoto.prepend(activeFotoCollage);
+            activeFotoCollage.animate({'opacity': 1}, 500);
+        });
+    }
+
     var littleFotoCollage = $('.list-foto-collage img'),
         wrapMainFotoCollage = $('.wrap-main-auto');
+        collageToggle(littleFotoCollage, wrapMainFotoCollage);
+    /*end*/
 
-    littleFotoCollage.on('click', function(e){
-        var activeFotoCollage = $(e.target).clone();
+    /**/
+    $('.hide-text_js').fadeToggle();
+    $('#show-text').on('click', function(e){
+        e.preventDefault();
+        $('.hide-text_js').fadeToggle();
+        console.log($(this).text());
+        if($(this).text() != 'Скрыть') {
+            $(this).text('Скрыть');
+        }
+        else {
+            $(this).text('Подробнее');
+        }
 
-            wrapMainFotoCollage.children('img').remove();
-            activeFotoCollage.css('opacity', 0);
-            wrapMainFotoCollage.prepend(activeFotoCollage);
-            activeFotoCollage.animate({'opacity': 1}, 500);
     });
     /*end*/
 })(jQuery);
