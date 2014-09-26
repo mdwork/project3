@@ -216,9 +216,6 @@
             $("#wrap-popup").click(function(e) {
                 e.stopPropagation();
             });
-
-            console.log(clientW);
-            console.log(fotoInPopupW);
         });
     }
     /*end*/
@@ -240,7 +237,7 @@
 
     var popupAd = $('#bt-ad_js'),
         formAd = $('#popup-up-ad'),
-        unregAdForm = $('#registered-ad-box');
+        unregAdForm = $('#unregistered-ad-box');
     popupWindow(popupAd, formAd, unregAdForm);
 
     var popupAdvancedSearch = $('#link-advanced-search'),
@@ -346,6 +343,64 @@
         }
         else {
             $(this).text('Подробнее');
+        }
+    });
+    /*end*/
+
+    /*favorites box*/
+    var curFavoritesBt = $('.bt-favorites'),
+        textCurFavoritesBt = curFavoritesBt.text();
+
+    curFavoritesBt.on('click', function(e){
+        var curBoxFavorites = $(e.target).closest('.favorite_js'),
+            posTopCurBoxFavorites = curBoxFavorites.offset().top,
+            posLeftCurBoxFavorites = curBoxFavorites.offset().left;
+
+        if($(e.target).text() != 'В избранное') {
+            $(e.target).text('В избранное');
+        }
+        else {
+            $(e.target).text('В избранном');
+                $('.box-favorites_js').remove();
+
+                var searchFavoritesBox = curBoxFavorites.children('.box-favorites_js');
+                if(searchFavoritesBox) {
+                    curBoxFavorites.prepend('<span class="box-favorites_js"><i class="fa fa-heart"></i>250</span>');
+                    $('.box-favorites_js').slideDown(250);
+                    if($(window).width() > 1204) {
+                        $('.box-favorites_js').css(
+                            'left', posLeftCurBoxFavorites - 62
+                        );
+                        if(posTopCurBoxFavorites >= $(document).scrollTop()) {
+                            $('.box-favorites_js').css(
+                                'top', posTopCurBoxFavorites - $(document).scrollTop()
+                            );
+                        }
+                        else {
+                            $('.box-favorites_js').css(
+                                'top', 0
+                            );
+                        }
+                    }
+                    else if($(window).width() < 1204 && $(window).width() > 480) {
+                        $('.box-favorites_js').css({
+                            'top': posTopCurBoxFavorites - $(document).scrollTop(),
+                            'left': 0
+                        });
+                    }
+
+                    else if($(window).width() <= 480) {
+                        $('.box-favorites_js').css({
+                            'bottom': 0,
+                            'left': 0
+                        });
+                    }
+                }
+        }
+
+        if($('.bt-favorites').text() == textCurFavoritesBt){
+
+            $('.box-favorites_js').remove();
         }
     });
     /*end*/
