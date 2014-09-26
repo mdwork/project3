@@ -427,7 +427,6 @@
         $('.wrap-all-list-auto-result-sort').sort(function (a, b) {
             return $(a).attr('data-sort') > $(b).attr('data-sort') ? 1 : -1;
         });
-        console.log($('.wrap-all-list-auto-result-sort').attr('data-sort'));
     });
     /*end*/
 })(jQuery);
