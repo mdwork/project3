@@ -235,7 +235,7 @@
         unregForm = $('#unregistered-box');
     popupWindow(popupTooltip, formTooltip, unregForm);
 
-    var popupAd = $('#bt-ad_js'),
+    var popupAd = $('.bt-ad_js'),
         formAd = $('#popup-up-ad'),
         unregAdForm = $('#unregistered-ad-box');
     popupWindow(popupAd, formAd, unregAdForm);
@@ -372,21 +372,28 @@
                             'left', posLeftCurBoxFavorites - 62
                         );
                         if(posTopCurBoxFavorites >= $(document).scrollTop()) {
-                            $('.box-favorites_js').css(
-                                'top', posTopCurBoxFavorites - $(document).scrollTop()
-                            );
+                            topPosition = posTopCurBoxFavorites - $(document).scrollTop()
                         }
                         else {
-                            $('.box-favorites_js').css(
-                                'top', 0
-                            );
+                            topPosition = 0
                         }
+                        $('.box-favorites_js').css(
+                            'top', topPosition
+                        )
                     }
                     else if($(window).width() < 1204 && $(window).width() > 480) {
-                        $('.box-favorites_js').css({
-                            'top': posTopCurBoxFavorites - $(document).scrollTop(),
-                            'left': 0
-                        });
+                        $('.box-favorites_js').css(
+                            'left', 0
+                        );
+                        if(posTopCurBoxFavorites >= $(document).scrollTop()) {
+                            topPosition = posTopCurBoxFavorites - $(document).scrollTop()
+                        }
+                        else {
+                            topPosition = 0
+                        }
+                        $('.box-favorites_js').css(
+                            'top', topPosition
+                        )
                     }
 
                     else if($(window).width() <= 480) {
@@ -402,6 +409,25 @@
 
             $('.box-favorites_js').remove();
         }
+    });
+    /*end*/
+
+    /*sort element*/
+    $('.data-sort_js').click(function(e){
+        e.preventDefault();
+
+        var arraySort = $('.sort-data_js').sort(function (a, b) {
+            return $(a).text() > $(b).text() ? 1 : -1;
+        });
+
+        arraySort.each(function(e){
+            $(this).closest('.wrap-all-list-auto-result-sort').attr('data-sort','sort' + e);
+        });
+
+        $('.wrap-all-list-auto-result-sort').sort(function (a, b) {
+            return $(a).attr('data-sort') > $(b).attr('data-sort') ? 1 : -1;
+        });
+        console.log($('.wrap-all-list-auto-result-sort').attr('data-sort'));
     });
     /*end*/
 })(jQuery);

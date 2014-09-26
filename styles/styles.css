@@ -908,6 +908,9 @@ a:hover                        { text-decoration:none; }
             -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
             box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
         }
+            .wrap-all-list-auto-result-sort {
+                margin-bottom: 25px;
+            }
             .collage-foto-main-auto,
             .collage-foto-all-auto {
                 overflow: hidden;
