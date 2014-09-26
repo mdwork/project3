@@ -1562,7 +1562,8 @@ a:hover                        { text-decoration:none; }
                             background-position: -267px 0;
                         }
 
-        #popup-reg {
+        #popup-reg,
+        #popup-up-ad {
             display: none;
             max-width: 834px;
             width: 100%;
@@ -1574,7 +1575,8 @@ a:hover                        { text-decoration:none; }
                 font-size: 32px;
                 color: #5e5f60;
             }
-                #popup-reg header div {
+                #popup-reg header div,
+                #popup-up-ad header div {
                     margin: 0 19px 25px;
                     font-size: 22px;
                     font-weight: 500;
@@ -1700,15 +1702,19 @@ a:hover                        { text-decoration:none; }
                         font-size: 30px;
                     }
             #unregistered-box,
-            #registered-box {
+            #registered-box,
+            #registered-ad-box,
+            #unregistered-ad-box {
                 display: none;
             }
-            #unregistered-box {
+            #unregistered-box,
+            #unregistered-ad-box {
                 padding-bottom: 306px;
                 background: url("../images/popup/unregistered-box_bg.png") no-repeat bottom center;
                 background-size: 100%;
             }
-            #registered-box {
+            #registered-box,
+            #registered-ad-box {
                 padding: 46px 20px 9px 20px;
             }
                 .reg-tooltip {
@@ -1754,7 +1760,7 @@ a:hover                        { text-decoration:none; }
                     margin-top: -48px;
                     margin-bottom: 77px;
                 }
-                    #check-terms-service {
+                    .check-terms-service {
                         width: 26px;
                         height: 24px;
                         margin-right: 5px;

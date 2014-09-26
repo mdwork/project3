@@ -238,6 +238,11 @@
         unregForm = $('#unregistered-box');
     popupWindow(popupTooltip, formTooltip, unregForm);
 
+    var popupAd = $('#bt-ad_js'),
+        formAd = $('#popup-up-ad'),
+        unregAdForm = $('#registered-ad-box');
+    popupWindow(popupAd, formAd, unregAdForm);
+
     var popupAdvancedSearch = $('#link-advanced-search'),
         formAdvancedSearch = $('#popup-advanced-search');
     popupWindow(popupAdvancedSearch, formAdvancedSearch);
