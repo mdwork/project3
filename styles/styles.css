@@ -897,8 +897,7 @@ a:hover                        { text-decoration:none; }
     .box-result-sort-auto {
         overflow: hidden;
     }
-        .main-auto-result-sort,
-        .all-list-auto-result-sort {
+        .main-auto-result-sort {
             overflow: hidden;
             padding: 15px;
             margin-bottom: 10px;
@@ -908,8 +907,17 @@ a:hover                        { text-decoration:none; }
             -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
             box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
         }
+        .all-list-auto-result-sort {
+            overflow: hidden;
+        }
             .wrap-all-list-auto-result-sort {
                 margin-bottom: 25px;
+                border: 1px solid #CDCDCD;
+                padding: 15px;
+
+                -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+                -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+                box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
             }
             .collage-foto-main-auto,
             .collage-foto-all-auto {
@@ -918,19 +926,23 @@ a:hover                        { text-decoration:none; }
                 margin-right: 15px;
             }
             .collage-foto-main-auto {
+                overflow: hidden;
                 max-width: 299px;
             }
                 .wrap-main-auto {
+                    overflow: hidden;
                     position: relative;
                     width: 100%;
+                    max-width: 281px;
                     max-height: 210px;
                     margin-bottom: 4px;
-                    height: 100%;
                 }
                     .wrap-main-auto img {
                         display: block;
                         width: 100%;
                         height: 100%;
+                        max-width: 281px;
+                        max-height: 210px;
                     }
                     .info-about-foto {
                         position: absolute;
@@ -1139,9 +1151,6 @@ a:hover                        { text-decoration:none; }
             float: left;
             margin-right: 30px;
         }
-        .box-description-auto {
-            overflow: hidden;
-        }
             a.header-auto-description {
                 font-size: 14px;
                 color: #5e5f60;
@@ -1160,7 +1169,7 @@ a:hover                        { text-decoration:none; }
                 text-decoration: none;
             }
             a.bt-more-info:hover {
-                border: none;
+                border-bottom: 1px dashed transparent;
             }
 
             .box-favorites_js {
@@ -1341,7 +1350,8 @@ a:hover                        { text-decoration:none; }
                 margin-left: 78%;
             }
 /*---------------LIST AUTO WITHOUT LOGO-------------*/
-    .list-auto-without-logo {
+    .list-auto-without-logo,
+    .list-categ-auto {
         overflow: hidden;
         margin: 25px 0 25px 45px;
     }
@@ -1358,6 +1368,30 @@ a:hover                        { text-decoration:none; }
                 color: #d7270d;
                 text-decoration: underline;
             }
+        .list-categ-auto > li {
+            float: left;
+        }
+            .header-red {
+                color: #d7270d;
+                font-size: 17px;
+            }
+            .list-year {
+                width: 24.6%;
+            }
+            .list-type-engine {
+                width: 26%;
+            }
+            .list-size-engine {
+                width: 28.5%;
+            }
+            .list-body {
+                width: 20.9%;
+            }
+                .list-categ-auto a {
+                    display: inline-block;
+                    margin-top: 5px;
+                    font-size: 17px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -2146,6 +2180,9 @@ a:hover                        { text-decoration:none; }
     .nav-footer {
         margin-left: 162px;
     }
+    .list-categ-auto {
+        margin-left: 25px;
+    }
 }
 @media screen and (min-width: 769px) {
     .jcarousel3 ul {
@@ -2264,6 +2301,10 @@ a:hover                        { text-decoration:none; }
     }
     .list-sort-link li:first-child {
         margin-left: 0;
+    }
+    .list-categ-auto a,
+    .header-red {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 497px) {
@@ -2423,6 +2464,13 @@ a:hover                        { text-decoration:none; }
     }
     .sub-menu li:first-child {
         border-top: none;
+    }
+    .list-categ-auto a,
+    .header-red {
+        font-size: 13px;
+    }
+    .list-categ-auto {
+        margin-left: 10px;
     }
 }
 
@@ -2867,4 +2915,7 @@ a:hover                        { text-decoration:none; }
 .width100,
 .width-table100 {
     width: 100%;
+}
+.border-grey {
+    border: 1px solid #CDCDCD;
 }
