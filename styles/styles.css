@@ -1111,6 +1111,99 @@ a:hover                        { text-decoration:none; }
                     cursor: pointer;
                     background: url("../images/content/icon_arrow_up.png") no-repeat;
                 }
+        .box-header-list-auto {
+            overflow: hidden;
+            padding-left: 10px;
+            background: #E6E6E6;
+        }
+        .box-content-list-auto {
+            overflow: hidden;
+            padding: 10px 0 10px 10px;
+            border-top: 1px solid #CDCDCD;
+        }
+        .box-content-list-auto:first-child {
+            border: none;
+        }
+            .box-header-list-auto li {
+                float: left;
+                padding: 11px 0 12px;
+                color: #636566;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .box-content-list-auto li {
+                float: left;
+                font-size: 14px;
+                color: #000;
+            }
+                .box-content-list-auto li a {
+                    display: block;
+                    min-height: 60px;
+                    font-size: 14px;
+                    color: #000;
+                }
+                .box-content-list-auto li a:hover {
+                    color: #5e5f60;
+                }
+            .box-header-list-auto .first-coloumn,
+            .box-content-list-auto .first-coloumn {
+                width: 15%;
+            }
+                .box-content-list-auto .first-coloumn img {
+                    display: block;
+                    width: 100%;
+                    max-width: 116px;
+                    max-height: 81px;
+                }
+            .box-header-list-auto .second-coloumn,
+            .box-content-list-auto .second-coloumn {
+                width: 12.2%;
+            }
+            .box-header-list-auto .third-coloumn,
+            .box-content-list-auto .third-coloumn {
+                width: 7.7%;
+            }
+            .box-header-list-auto .fourth-coloumn,
+            .box-content-list-auto .fourth-coloumn {
+                width: 6%;
+            }
+            .box-header-list-auto .fifth-coloumn,
+            .box-content-list-auto .fifth-coloumn {
+                width: 7%;
+            }
+            .box-header-list-auto .sixth-coloumn,
+            .box-content-list-auto .sixth-coloumn {
+                width: 6.5%;
+            }
+            .box-header-list-auto .seventh-coloumn,
+            .box-content-list-auto .seventh-coloumn {
+                width: 11%;
+            }
+            .box-header-list-auto .eighth-coloumn,
+            .box-content-list-auto .eighth-coloumn {
+                width: 7.8%;
+            }
+            .box-header-list-auto .ninth-coloumn,
+            .box-content-list-auto .ninth-coloumn {
+                width: 11.6%;
+            }
+            .box-header-list-auto .tenth-coloumn,
+            .box-content-list-auto .tenth-coloumn {
+                width: 7%;
+            }
+                .box-content-list-auto .color-auto {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin: 3px 0 0 5px;
+                    text-indent: -9999px;
+                    background: #55A0DD;
+                    cursor: pointer;
+                }
+            .box-header-list-auto .eleventh-coloumn,
+            .box-content-list-auto .eleventh-coloumn {
+                width: 8.2%;
+            }
 
     .box-banner {
         overflow: hidden;
@@ -2038,6 +2131,11 @@ a:hover                        { text-decoration:none; }
     .list-advantage li:first-child {
         margin-left: 0;
     }
+    .box-content-list-auto li,
+    .box-content-list-auto li a,
+    .box-content-list-auto li span {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 925px) {
     .wrap-scale-price {
@@ -2066,7 +2164,7 @@ a:hover                        { text-decoration:none; }
         margin-top: 55px;
     }
     #link-advanced-search:hover {
-        margin-bottom: 11px;
+        margin-bottom: 1px;
     }
     .box-review {
         float: none;
@@ -2097,6 +2195,17 @@ a:hover                        { text-decoration:none; }
     }
     .bt-price-subscription {
         max-width: 130px;
+    }
+    .box-content-list-auto li,
+    .box-content-list-auto li a,
+    .box-content-list-auto li span {
+        font-size: 11px;
+    }
+    .box-content-list-auto li a {
+        min-height: 49px;
+    }
+    .box-header-list-auto li {
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -2180,6 +2289,9 @@ a:hover                        { text-decoration:none; }
     }
     .list-categ-auto {
         margin-left: 25px;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
 @media screen and (min-width: 769px) {
