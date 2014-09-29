@@ -933,7 +933,6 @@ a:hover                        { text-decoration:none; }
                     overflow: hidden;
                     position: relative;
                     width: 100%;
-                    max-width: 281px;
                     max-height: 210px;
                     margin-bottom: 4px;
                 }
@@ -941,7 +940,6 @@ a:hover                        { text-decoration:none; }
                         display: block;
                         width: 100%;
                         height: 100%;
-                        max-width: 281px;
                         max-height: 210px;
                     }
                     .info-about-foto {
