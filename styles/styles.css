@@ -864,11 +864,11 @@ a:hover                        { text-decoration:none; }
                     color: #5e5f60;
                     border-color: #5e5f60;
                 }
-                    a.active-sort-link {
+                    .active-sort-link a {
                         color: #777;
                         border-bottom: none;
                     }
-                    .active-sort-link:after {
+                    .active-sort-link a:after {
                         content: '';
                         display: inline-block;
                         width: 9px;

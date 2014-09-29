@@ -413,20 +413,59 @@
     /*end*/
 
     /*sort element*/
-    $('.data-sort_js').click(function(e){
-        e.preventDefault();
+    function sortElement(targetCategory, nameDataParameter){
+        targetCategory.click(function(e){
+            e.preventDefault();
 
-        var arraySort = $('.sort-data_js').sort(function (a, b) {
-            return $(a).text() > $(b).text() ? 1 : -1;
-        });
+            var $detachAdsItem = $(".wrap-all-list-auto-result-sort").detach();
 
-        arraySort.each(function(e){
-            $(this).closest('.wrap-all-list-auto-result-sort').attr('data-sort','sort' + e);
-        });
+            $detachAdsItem.sort(function (a, b) {
+                var aSortTime = $(a).data(nameDataParameter),
+                    bSortTime = $(b).data(nameDataParameter);
 
-        $('.wrap-all-list-auto-result-sort').sort(function (a, b) {
-            return $(a).attr('data-sort') > $(b).attr('data-sort') ? 1 : -1;
+                if ( aSortTime < bSortTime ) { return -1; }
+                if ( aSortTime > bSortTime ) { return 1; }
+
+                return 0;
+            });
+
+            $detachAdsItem.appendTo(".all-list-auto-result-sort");
         });
+    }
+    var dataSort = $('.data-sort_js'),
+        dataParam = 'sort-timestamp';
+        sortElement(dataSort, dataParam);
+
+    var priceSort = $('.price-sort_js'),
+        priceParam = 'sort-price';
+        sortElement(priceSort, priceParam);
+
+    var yearSort = $('.year-sort_js'),
+        yearParam = 'sort-year';
+        sortElement(yearSort, yearParam);
+
+    var engineSort = $('.engine-sort_js'),
+        engineParam = 'sort-engine';
+        sortElement(engineSort, engineParam);
+
+    var mileageSort = $('.mileage-sort_js'),
+        mileageParam = 'sort-mileage';
+        sortElement(mileageSort, mileageParam);
+
+    var transmissionSort = $('.transmission-sort_js'),
+        transmissionParam = 'sort-transmission';
+        sortElement(transmissionSort, transmissionParam);
+    /*end*/
+
+    /*active link*/
+
+    $('.list-sort-link li').on('click', function(event){
+        var listLinks = $('.list-sort-link li');
+            listLinks.each(function(){
+                $(this).removeClass('active-sort-link');
+            });
+        $(event.target).parent().addClass('active-sort-link');
+
     });
     /*end*/
 })(jQuery);
