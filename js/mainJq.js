@@ -328,7 +328,7 @@
     }
 
     var littleFotoCollage = $('.list-foto-collage img'),
-        wrapMainFotoCollage = $('.wrap-main-auto');
+        wrapMainFotoCollage = $('.wrap-main-auto > a');
         collageToggle(littleFotoCollage, wrapMainFotoCollage);
     /*end*/
 

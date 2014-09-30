@@ -80,7 +80,9 @@ a.jcarousel-control-prev2,
 a.jcarousel-control-prev3 {
     left: 15px;
 }
-
+a.jcarousel-control-prev3 {
+    left: 24px;
+}
 a.jcarousel-control-next,
 a.jcarousel-control-next2,
 a.jcarousel-control-next3 {
