@@ -1111,7 +1111,10 @@ a:hover                        { text-decoration:none; }
                     cursor: pointer;
                     background: url("../images/content/icon_arrow_up.png") no-repeat;
                 }
-        .box-header-list-auto {
+                .bt-up-ad:hover {
+                    background-image: url("../images/content/icon_arrow_up_hover.png");
+                }
+.box-header-list-auto {
             overflow: hidden;
             padding-left: 10px;
             background: #E6E6E6;
@@ -1249,11 +1252,13 @@ a:hover                        { text-decoration:none; }
             }
             .box-description-auto p {
                 margin-bottom: 15px;
+                padding: 0 5px;
                 font-size: 14px;
                 color: #000;
             }
             a.bt-more-info {
                 display: inline-block;
+                margin-left: 5px;
                 font-size: 14px;
                 color: #d7270e;
                 border-bottom: 1px dashed #d7270e;
@@ -1367,6 +1372,9 @@ a:hover                        { text-decoration:none; }
             margin-bottom: 10px;
             background: url("../images/SideBar/icon-placement.png") no-repeat;
         }
+        .link-placement:hover {
+            background-image: url('../images/sidebar/icon-placement_hover.png');
+        }
             .link-placement a {
                 color: #5E5F60;
                 font-size: 18px;
@@ -1375,7 +1383,8 @@ a:hover                        { text-decoration:none; }
                 text-decoration: none;
             }
             .link-placement a:hover {
-                border: none;
+                color: #D7270D;
+                border-color: #D7270D;
             }
             .ad-sidebar {
                 max-width: 222px;
