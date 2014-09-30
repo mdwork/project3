@@ -1373,7 +1373,7 @@ a:hover                        { text-decoration:none; }
             background: url("../images/SideBar/icon-placement.png") no-repeat;
         }
         .link-placement:hover {
-            background-image: url('../images/sidebar/icon-placement_hover.png');
+            background-image: url("../images/sidebar/icon-placement_hover.png");
         }
             .link-placement a {
                 color: #5E5F60;
@@ -2097,6 +2097,11 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1110px) {
+    .sub-nav {
+        padding-left: 18px;
+    }
+}
 @media screen and (max-width: 1090px) {
     .wrapper {
         padding: 0;
