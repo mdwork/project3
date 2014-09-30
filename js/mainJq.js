@@ -463,9 +463,16 @@
         var listLinks = $('.list-sort-link li');
             listLinks.each(function(){
                 $(this).removeClass('active-sort-link');
+
             });
         $(event.target).parent().addClass('active-sort-link');
 
+        if(!$(event.target).parent().hasClass('active-triagle')) {
+            $(event.target).parent().addClass('active-triagle');
+        }
+        else {
+            $(event.target).parent().removeClass('active-triagle');
+        }
     });
     /*end*/
 })(jQuery);
