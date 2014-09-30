@@ -413,11 +413,11 @@
     /*end*/
 
     /*sort element*/
-    function sortElement(targetCategory, nameDataParameter){
+    function sortElement(targetCategory, nameDataParameter, wrapListSort, placeEntry){
         targetCategory.click(function(e){
             e.preventDefault();
 
-            var $detachAdsItem = $(".wrap-all-list-auto-result-sort").detach();
+            var $detachAdsItem = wrapListSort.detach();
 
             $detachAdsItem.sort(function (a, b) {
                 var aSortTime = $(a).data(nameDataParameter),
@@ -429,32 +429,43 @@
                 return 0;
             });
 
-            $detachAdsItem.appendTo(".all-list-auto-result-sort");
+            $detachAdsItem.appendTo(placeEntry);
         });
     }
+    var wrapBoxAuto = $(".box-content-list-auto"),
+        wrapListBoxAuto = $('.wrap-content-list-auto'),
+        wrapSortContentAuto = $(".wrap-all-list-auto-result-sort"),
+        wrapListSortAuto = $(".all-list-auto-result-sort");
+
     var dataSort = $('.data-sort_js'),
         dataParam = 'sort-timestamp';
-        sortElement(dataSort, dataParam);
+        sortElement(dataSort, dataParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(dataSort, dataParam, wrapSortContentAuto, wrapListSortAuto);
 
     var priceSort = $('.price-sort_js'),
         priceParam = 'sort-price';
-        sortElement(priceSort, priceParam);
+        sortElement(priceSort, priceParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(priceSort, priceParam, wrapListSortAuto);
 
     var yearSort = $('.year-sort_js'),
         yearParam = 'sort-year';
-        sortElement(yearSort, yearParam);
+        sortElement(yearSort, yearParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(yearSort, yearParam, wrapListSortAuto);
 
     var engineSort = $('.engine-sort_js'),
         engineParam = 'sort-engine';
-        sortElement(engineSort, engineParam);
+        sortElement(engineSort, engineParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(engineSort, engineParam, wrapListSortAuto);
 
     var mileageSort = $('.mileage-sort_js'),
         mileageParam = 'sort-mileage';
-        sortElement(mileageSort, mileageParam);
+        sortElement(mileageSort, mileageParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(mileageSort, mileageParam, wrapListSortAuto);
 
     var transmissionSort = $('.transmission-sort_js'),
         transmissionParam = 'sort-transmission';
-        sortElement(transmissionSort, transmissionParam);
+        sortElement(transmissionSort, transmissionParam, wrapBoxAuto, wrapListBoxAuto);
+        sortElement(transmissionSort, transmissionParam, wrapListSortAuto);
     /*end*/
 
     /*active link*/
