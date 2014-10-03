@@ -231,9 +231,8 @@
     popupWindow(popupAutoreg, formReg, subFormAutoreg);
 
     var popupTooltip = $('#popup-tooltip_js'),
-        formTooltip = $('#popup-reg'),
-        unregForm = $('#unregistered-box');
-    popupWindow(popupTooltip, formTooltip, unregForm);
+        formTooltip = $('#popup-reg');
+    popupWindow(popupTooltip, formTooltip);
 
     var popupAd = $('.bt-ad_js'),
         formAd = $('#popup-up-ad'),
