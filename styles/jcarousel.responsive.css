@@ -162,7 +162,13 @@ a.jcarousel-control-next3 {
         max-width: none;
     }
     .sub-article-news article {
-        padding-right: 15px;
+        padding-right: 20px !important;
+    }
+    .ad-sidebar {
+        margin-left: 0;
+    }
+    a.jcarousel-control-next3 {
+        right: 23px;
     }
     a.jcarousel-control-prev,
     a.jcarousel-control-next,
